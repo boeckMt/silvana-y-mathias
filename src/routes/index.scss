@@ -1,0 +1,718 @@
+@import "bulma/css/bulma.css";
+@import "https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script";
+
+/** countdown */
+/** ------------- */
+/** for google map */
+:root {
+    --overlay-color-65: rgba(33, 13, 14, .6);
+    --overlay-color: rgba(33, 13, 14, .8);
+    --bg-2-color: rgba(202, 140, 131, .8);
+    --scrollbar-thumb-color: rgb(169 85 103);
+    --bg-3-color: rgba(230, 212, 205, .8);
+    --bg-footer-color: rgb(169 85 103);
+}
+
+$color_1: var(--overlay-color);
+$color_2: white;
+$color_3: whitesmoke;
+$color_4: #000;
+$color_5: #43485c;
+$color_6: ghostwhite;
+$color_7: #D8A9A8;
+$color_8: var(--bg-3-color);
+$color_9: var(--bg-2-color);
+$color_10: #BC8887;
+$font-family_1: 'Raleway', Tahoma, sans-serif;
+$font-family_2: 'Raleway', sans-serif;
+$font-family_3: 'Rouge Script', sans-serif;
+$font-family_4: 'Lato', sans-serif;
+$background-color_1: rgb(222 206 182);
+$background-color_2: var(--bg-2-color);
+$background-color_3: var(--bg-3-color);
+$background-color_4: rgb(238, 250, 253);
+$background-color_5: var(--overlay-color);
+$background-color_6: #BC8887;
+$background-color_7: var(--scrollbar-thumb-color);
+$background-color_8: #59a543;
+$background-color_9: #6cc751;
+$background-color_10: #bf7877;
+$background-color_11: #26ade4;
+
+.app {
+    position: relative;
+    width: 100%;
+}
+
+.has-vertically-aligned-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family_1;
+    width: 100%;
+    min-height: 100%;
+}
+
+.header-wrapper {
+    // padding-bottom: 30px;
+}
+
+.navbar-item {
+    line-height: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.navbar-item.is-active {
+    border-bottom: 2px solid var(--overlay-color);
+    //--bulma-navbar-item-background-a: 0 !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    --overlay-color: var(--scrollbar-thumb-color);
+}
+
+.a.navbar-item {
+    color: $color_1;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-burger {
+    --bulma-navbar-burger-color: #fff;
+}
+
+#menu-switch {
+    display: none;
+
+    &:checked+.navbar-menu {
+        display: block;
+    }
+}
+
+.navbar-brand {
+    background-color: var(--overlay-color-65);
+}
+
+.navbar-menu {
+    background-color: var(--bg-2-color);
+    --bulma-navbar-item-color: #fff;
+    --bulma-focus-h: rgba(33, 13, 14);
+    padding: 0;
+}
+
+.hero {
+    background-color: var(--overlay-color-65);
+    // background-size: cover;
+    color: $color_2;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-family: $font-family_2;
+
+    .title {
+        font-family: $font-family_3;
+        font-weight: 700;
+        transform: rotate(-2deg);
+        font-size: 5rem;
+        padding-bottom: 5px;
+        color: $color_3;
+    }
+
+    .subtitle {
+        padding: 35px;
+        color: $color_3;
+        font-size: 1.3rem;
+    }
+
+    .hero-body-title {
+        padding-top: 35px;
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        background: #fff;
+    }
+}
+
+.hero-foot {
+    height: 50px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+    display: flex;
+
+    // https://bulma.io/documentation/components/navbar/
+    // not working... https://stackoverflow.com/questions/45530235/the-property-position-sticky-is-not-working
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+
+
+    .hero-foot--wrapper {
+        margin: 7px auto;
+        height: 50px;
+
+        .hero-menu-desktop {
+            line-height: 38px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 1rem;
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding-right: 15px;
+                    padding-left: 15px;
+
+                    a {
+                        color: $color_1;
+
+                        &:hover {
+                            color: $color_1;
+                            transition: all .2s ease-in-out;
+                            border-bottom: 2px solid var(--bg-footer-color);
+                        }
+                    }
+                }
+
+                li.is-active {
+                    a {
+                        border-bottom: 2px solid var(--overlay-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-body {
+    background-image: url('/Llamitas_Hochzeit_scan.jpg');
+    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('/Llamitas_Hochzeit_scan.jpg') no-repeat;
+    background-size: 60%;
+    background-position-x: center;
+    background-position-y: center;
+    color: $color_2;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-family: $font-family_2;
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 1024px) {
+    .hero-body {
+        background-size: contain;
+        background-position-y: top var(--bulma-navbar-height);
+    }
+}
+
+@media (max-width: 540px) {
+    .hero-body {
+        background-position-y: var(--bulma-navbar-height);
+    }
+}
+
+.main-content {
+    color: $color_4;
+    font-family: $font-family_2;
+
+    .section-dark {
+        background-color: $background-color_2;
+        padding: 80px 40px;
+    }
+
+    .section-darker {
+        background-color: $background-color_3;
+        padding: 80px 40px;
+    }
+
+    .section-dark.resume {
+        height: 400px;
+        padding-top: 60px;
+
+        .title {
+            padding: 20px;
+        }
+
+        button {
+            border: 2px solid var(--overlay-color);
+            background: white;
+            color: $color_1;
+            height: 50px;
+            width: 250px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .fa-download {
+            color: $color_1;
+        }
+    }
+
+    .section-dark.my-work {
+        padding: 80px 40px;
+
+        .work-item {
+            &:hover {
+                -webkit-transform: scale(1.055) translateY(-2px);
+                transform: scale(1.055) translateY(-2px);
+                -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+                box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+            }
+        }
+    }
+
+    .section-dark.foto-foto {
+        .foto-item {
+            margin-bottom: 1rem;
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+        }
+    }
+
+    .section-light {
+        padding: 80px 40px;
+    }
+
+    .section-light.regular-section {
+        padding-bottom: 80px;
+
+        .is-larger {
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            img {
+                border-radius: 11px;
+                margin: 20px;
+                box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+            }
+        }
+    }
+
+    .section-light.skills {
+        padding: 100px;
+
+        h1 {
+            padding: 10px;
+            font-size: 24px;
+        }
+    }
+
+    .section-light.contact {
+        padding: 80px;
+
+        button {
+            width: 100%;
+            color: $color_2;
+            height: 50px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-family: $font-family_2;
+        }
+    }
+
+    .section-color.pertanyaan {
+        padding: 100px;
+        background-color: $background-color_5;
+        color: $color_2;
+
+        .title {
+            color: $color_2;
+        }
+
+        .subtitle {
+            color: $color_2;
+        }
+
+        i {
+            font-size: 3rem;
+            padding: 20px;
+        }
+    }
+
+    .section-title {
+        font-family: $font-family_2;
+        font-weight: 900;
+        color: $color_1;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        padding-bottom: 60px;
+    }
+
+    .no-padding-top {
+        padding-top: 0px;
+    }
+}
+
+.section-map {
+    padding: 0 0 0 0;
+}
+
+.nama-big {
+    font-family: $font-family_3;
+    color: $color_1;
+    font-size: 3.5rem;
+    letter-spacing: 0px;
+    padding-bottom: 6px;
+    line-height: 3.7rem;
+}
+
+.ampersand {
+    font-size: 5rem;
+    font-family: $font-family_3;
+    color: $color_1;
+    line-height: 5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bodytext {
+    font-size: 18px;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-family: $font-family_2;
+}
+
+.date-num {
+    font-size: 5rem;
+    font-family: $font-family_2;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.location {
+    font-size: 1.4rem;
+    font-family: $font-family_2;
+    margin-bottom: 50px;
+}
+
+.has-vertically-align {
+    vertical-align: middle;
+}
+
+.footer {
+    bottom: 0;
+    width: 100vw;
+    padding: 10px 10px 10px 10px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: var(--bg-footer-color);
+    color: $color_3;
+
+    p {
+        color: $color_2;
+        font-weight: 500;
+        font-size: 10pt;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    img {
+        margin: 10px 0px 10px 10px;
+        display: inline-block;
+        max-height: 24px;
+        vertical-align: middle;
+    }
+
+    a {
+        .nav-item {
+            color: $color_3;
+        }
+    }
+}
+
+.fa-download {
+    color: $color_5;
+}
+
+.divider {
+    margin: 40px 25px;
+    display: inline-block;
+    max-height: 60px;
+    vertical-align: middle;
+}
+
+.intro-image {
+    margin: 25px;
+    display: inline-block;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+#toTop {
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $background-color_5;
+    color: $color_2;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+
+    a {
+        color: $color_2;
+    }
+
+    &:hover {
+        background-color: $background-color_6;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: $background-color_2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $background-color_7;
+}
+
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #D8A9A8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+
+    .preloader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 120px;
+    }
+}
+
+.btn-whatsapp {
+    &:hover {
+        color: $color_2;
+        background-color: $background-color_8;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        border: 2px solid #59a543;
+        width: 210px;
+        height: 65px;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    background-color: $background-color_9;
+    width: 210px;
+    height: 65px;
+    color: $color_2;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border-left: 1px solid #6cc751;
+    border-right: 1px solid #6cc751;
+    border-top: 1px solid #6cc751;
+    border-bottom: 1px solid #6cc751;
+    align-items: center;
+    margin: 1rem;
+}
+
+.btn-cta {
+    &:hover {
+        color: $color_2;
+        background-color: $background-color_10;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        border: 2px solid #bf7877;
+        width: 210px;
+        height: 65px;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    background-color: $background-color_5;
+    width: 210px;
+    height: 65px;
+    color: $color_2;
+    font-size: 1.2rem;
+    border: 2px solid var(--overlay-color);
+    border-radius: 10px;
+    align-items: center;
+    margin: 1rem;
+}
+
+.cashbac-logo-inline {
+    width: 160px;
+    vertical-align: middle;
+}
+
+.button-download {
+    min-width: 200px;
+    height: 55px;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+.voucher-code {
+    height: 55px;
+    max-width: 180px;
+    border: 2px solid #26ade4;
+    border-radius: 10px 0 0 10px;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.btn-voucher-code {
+    height: 55px;
+    min-width: 100px;
+    border: 2px solid #26ade4;
+    background-color: $background-color_11;
+    border-radius: 0 10px 10px 0;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    color: $color_2;
+}
+
+.fa-copy {
+    margin-right: 5px;
+}
+
+.white {
+    color: $color_6;
+}
+
+.dusty-pink {
+    color: $color_7;
+}
+
+.dusty-pink-lighter {
+    color: $color_8;
+}
+
+.dusty-pink-lightest {
+    color: $color_9;
+}
+
+.dusty-pink-darker {
+    color: $color_10;
+}
+
+.dusty-pink-darkest {
+    color: $color_1;
+}
+
+.tile {
+    border-radius: 10px;
+}
+
+.countdownContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.simply-section>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#countdownEle {
+    display: flex;
+    max-width: 650px;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.simply-amount {
+    padding-right: 0.2rem;
+}
+
+
+.section-light {
+    background-image: url("/19638.png.png");
+    background-position: bottom -30px center;
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+}
+
+.gmap_iframe {
+    height: 500px !important;
+}
+
+@media (max-width: 599px) {
+    .navbar {
+        display: block;
+    }
+
+
+    .hero-foot {
+        display: none;
+    }
+
+
+    .main-content {
+        .section-dark.resume {
+            padding-top: 75px;
+        }
+
+        .section-dark.foto-foto {
+            padding: 75px 20px;
+        }
+
+        .section-light.regular-section {
+            .about-links {
+                text-align: center;
+            }
+
+            .right-image {
+                img {
+                    margin: auto;
+                }
+            }
+        }
+
+        .section-light.skills {
+            padding: 50px 20px 40px 20px;
+            padding-bottom: 20px;
+        }
+
+        .section-light.contact {
+            padding: 80px 40px;
+        }
+    }
+}
+
+@media (max-width: 469px) {
+    .grid.is-col-min-16 {
+        --bulma-grid-column-min: 100%;
+    }
+}

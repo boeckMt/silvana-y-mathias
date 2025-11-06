@@ -1,0 +1,71 @@
+import { component$ } from '@builder.io/qwik'
+
+interface ItemProps {
+    id: string;
+}
+
+const timeText = {
+    date1: 'Samstag',
+    date2: 25,
+    date3: 'Juli 2026',
+    timeTitle: 'Beginn:',
+    time: 'ca. 15:00',
+    timeTitle2: 'Rezeption',
+    time2: '19:00 - 21:00',
+    calendarHref: 'https://calendar.app.google/TLTncWoMTxdshdWN8',
+    calendarTitle: 'Google Calendar'
+};
+
+
+export const TimeSection = component$<ItemProps>((props) => {
+    return (
+        <section class="section-dark" id={props.id}>
+            <div class="container">
+
+                <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                    <h1 class="title has-text-centered section-title">date</h1>
+                </div>
+                <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <div class="is-larger has-text-centered">
+                            <div class="date tanggal-hari has-text-centered">{timeText.date1}</div>
+                            <div class="date date-num has-text-centered">{timeText.date2}</div>
+                            <div class="date tanggal-bulan has-text-centered">{timeText.date3}</div>
+                        </div>
+
+                    </div>
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <div class="date is-larger has-text-centered">
+                            {timeText.timeTitle}
+                            <br></br>
+                            <strong>{timeText.time}</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <h1 class="date is-larger has-text-centered">
+                            {timeText.timeTitle2}
+                            <br></br>
+                            <strong>{timeText.time2}</strong>
+                        </h1>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="space40px"></div>
+            <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                <a href={timeText.calendarHref} target="_blank" class="button has-tooltip btn-cta"
+                    data-tooltip="Add to Calendar" data-aos="zoom-in">
+                    <i class="far fa-calendar-plus"></i>
+                    &nbsp;&nbsp;{timeText.calendarTitle}
+                </a>
+            </div>
+        </section>
+    )
+});
