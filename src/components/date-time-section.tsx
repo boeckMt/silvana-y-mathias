@@ -10,32 +10,30 @@ const timeText = {
     date3: 'Juli 2026',
     timeTitle: 'Beginn:',
     time: 'ca. 15:00',
-    timeTitle2: 'Rezeption',
-    time2: '19:00 - 21:00',
-    calendarHref: 'https://calendar.app.google/TLTncWoMTxdshdWN8',
+    calendarHref: 'https://calendar.app.google/<id>',
     calendarTitle: 'Google Calendar'
 };
 
 
-export const TimeSection = component$<ItemProps>((props) => {
+export const DateTimeSection = component$<ItemProps>((props) => {
     return (
         <section class="section-dark" id={props.id}>
             <div class="container">
 
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-                    <h1 class="title has-text-centered section-title">date</h1>
+                    <h1 class="title has-text-centered section-title">Datum</h1>
                 </div>
                 <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-                    <div class="column is-4 has-vertically-aligned-content">
+                    <div class="column is-6 has-vertically-aligned-content">
 
                         <div class="is-larger has-text-centered">
-                            <div class="date tanggal-hari has-text-centered">{timeText.date1}</div>
+                            <div class="date has-text-centered">{timeText.date1}</div>
                             <div class="date date-num has-text-centered">{timeText.date2}</div>
-                            <div class="date tanggal-bulan has-text-centered">{timeText.date3}</div>
+                            <div class="date has-text-centered">{timeText.date3}</div>
                         </div>
 
                     </div>
-                    <div class="column is-4 has-vertically-aligned-content">
+                    <div class="column is-6 has-vertically-aligned-content">
 
                         <div class="date is-larger has-text-centered">
                             {timeText.timeTitle}
@@ -44,18 +42,6 @@ export const TimeSection = component$<ItemProps>((props) => {
                         </div>
 
                     </div>
-
-                    <div class="column is-4 has-vertically-aligned-content">
-
-                        <h1 class="date is-larger has-text-centered">
-                            {timeText.timeTitle2}
-                            <br></br>
-                            <strong>{timeText.time2}</strong>
-                        </h1>
-
-
-                    </div>
-
                 </div>
             </div>
             <div class="space40px"></div>

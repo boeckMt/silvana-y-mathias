@@ -86,6 +86,10 @@ const images: IimageCard[] = [
     }
 ];
 
+images.forEach(i =>{
+    i.src = '/placeholderImg.jpg';
+})
+
 
 
 interface ItemProps {
@@ -124,7 +128,7 @@ export const ImageSection = component$<ItemProps>((props) => {
 
                         <div class="space40px"></div>
                         <div data-aos="fade-up" data-aos-easing="linear">
-                            <img src="../../19638.png" class="divider has-vertically-align" alt="~~~" width={723} height={800}></img>
+                            <img src="placeholter2.png" class="divider has-vertically-align" alt="~~~" width={496.46} height={100}></img>
                         </div>
                         <div class="space40px"></div>
                         <div class="space40px"></div>

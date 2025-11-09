@@ -5,7 +5,9 @@ import { Countdown } from './countdown';
 
 const heroText = {
     title1: 'Hochzeit von',
-    title2: 'Silvana & Mathias',
+    title2part1: 'Silvana',
+    title2part2: 'Y',
+    title2part3: 'Mathias',
     title3: 'Samstag, 25 Juli 2026'
 }
 
@@ -14,7 +16,7 @@ export const HeroBody = component$(() => {
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="subtitle">{heroText.title1}</h1>
-                <h2 class="title">{heroText.title2}</h2>
+                <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
                 <h4 class="subtitle hero-body-title">
                     {heroText.title3}
                 </h4>

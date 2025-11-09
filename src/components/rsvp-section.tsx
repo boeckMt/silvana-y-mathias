@@ -7,10 +7,20 @@ interface ItemProps {
 const rsvpText = {
     title: 'Songs senden',
     subtitle: `hsjhfsdk ...`,
-    whatsappTitle1: `Informieren Sie CPW`,
+
+    groupChat: 'https://chat.whatsapp.com/<id>?mode=wwt',
+    groupChatTitle: 'Open Group Chat',
+
+    googleLink: 'https://forms.gle/<id>',
+    googleLinkTitle: 'Google RSVP',
+
+    mailLink: `mailto:<mail>?subject=[Hochzeit%20RSVP]%20SilvanaYMathias&body=I will come \n And we are 3 Persons`,
+    mailLinkTitle: 'Mail RSVP',
+    
+    
     href1: 'https://api.whatsapp.com/send?phone=<number>&text=<text>&source=<source>&data=<data>',
     href2: 'https://api.whatsapp.com/send?phone=<number>&text=<text>&source=<source>&data=<data>',
-    whatsappTitle2: `Oder CPP`
+    whatsappTitle2: `Send with whatsapp`
 };
 
 
@@ -27,18 +37,26 @@ export const RsvpSection = component$<ItemProps>((props) => {
                             {rsvpText.subtitle}
                         </p>
 
-                        <a href={rsvpText.href1}
+                        <a href={rsvpText.groupChat}
                             class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                             <i class="fab fa-whatsapp"></i>
-                            &nbsp;&nbsp;{rsvpText.whatsappTitle1}
+                            &nbsp;&nbsp;{rsvpText.groupChatTitle}
                         </a>
 
 
 
-                        <a href={rsvpText.href2}
+                        <a href={rsvpText.googleLink}
                             class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                             <i class="fab fa-whatsapp"></i>
-                            &nbsp;&nbsp;{rsvpText.whatsappTitle2}
+                            &nbsp;&nbsp;{rsvpText.googleLinkTitle}
+                        </a>
+                        <div class="space40px"></div>
+
+
+                        <a href={rsvpText.mailLink}
+                            class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                            <i class="fab fa-whatsapp"></i>
+                            &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                         </a>
                         <div class="space40px"></div>
 
