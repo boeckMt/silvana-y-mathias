@@ -1,6 +1,7 @@
 @import "bulma/css/bulma.css";
-@import "https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script";
-
+@import "@fontsource/lato/index.css";
+@import "@fontsource/raleway/index.css";
+@import "@fontsource/alex-brush/index.css";
 /** countdown */
 /** ------------- */
 /** for google map */
@@ -25,7 +26,7 @@ $color_9: var(--bg-2-color);
 $color_10: #BC8887;
 $font-family_1: 'Raleway', Tahoma, sans-serif;
 $font-family_2: 'Raleway', sans-serif;
-$font-family_3: 'Rouge Script', sans-serif;
+$font-family_3: 'Alex Brush', sans-serif;
 $font-family_4: 'Lato', sans-serif;
 $background-color_1: rgb(222 206 182);
 $background-color_2: var(--bg-2-color);
@@ -58,6 +59,12 @@ html {
     font-family: $font-family_1;
     width: 100%;
     min-height: 100%;
+}
+
+body{
+    main{
+        width: 100%;
+    }
 }
 
 .header-wrapper {
@@ -123,6 +130,7 @@ html {
         font-size: 5rem;
         padding-bottom: 5px;
         color: $color_3;
+        word-spacing: 0.3rem;
     }
 
     .subtitle {
@@ -142,7 +150,7 @@ html {
 }
 
 .hero-foot {
-    height: 50px;
+    height: auto; // 50px;
     background: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
     display: flex;
@@ -156,7 +164,7 @@ html {
 
     .hero-foot--wrapper {
         margin: 7px auto;
-        height: 50px;
+        height: auto; // 50px;
 
         .hero-menu-desktop {
             line-height: 38px;
@@ -225,8 +233,13 @@ html {
         padding: 80px 40px;
     }
 
-    .section-darker {
+    .section-color-2 {
         background-color: $background-color_3;
+        padding: 80px 40px;
+    }
+
+    .section-color-3 {
+        background-color: $background-color_4;
         padding: 80px 40px;
     }
 
@@ -358,22 +371,22 @@ html {
     padding: 0 0 0 0;
 }
 
-.nama-big {
+.name-big {
     font-family: $font-family_3;
     color: $color_1;
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 0px;
-    padding-bottom: 6px;
+    padding-top: 0.5rem;
     line-height: 3.7rem;
 }
 
 .ampersand {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: $font-family_3;
     color: $color_1;
-    line-height: 5rem;
+    line-height: 4rem;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .bodytext {
@@ -404,7 +417,7 @@ html {
 
 .footer {
     bottom: 0;
-    width: 100vw;
+    // width: 100vw;
     padding: 10px 10px 10px 10px;
     line-height: 25px;
     text-align: center;
@@ -441,7 +454,7 @@ html {
 .divider {
     margin: 40px 25px;
     display: inline-block;
-    max-height: 60px;
+    max-height: 100px;
     vertical-align: middle;
 }
 
@@ -652,7 +665,7 @@ body.preloader-site {
 
 
 .section-light {
-    background-image: url("/19638.png.png");
+    // background-image: url("/19638.png");
     background-position: bottom -30px center;
     background-repeat: no-repeat;
     background-size: initial;
