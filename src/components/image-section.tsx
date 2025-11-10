@@ -27,67 +27,67 @@ const images: IimageCard[] = [
     {
         title: 'Mai 2023',
         subtitle: 'Unsere erste gemainsame Wanderung - Graseck Kochelsee',
-        src: '/IMG-20230519-WA0048.jpg' // <Img20230519Wa0048></Img20230519Wa0048>
+        src: 'IMG-20230519-WA0048.jpg' // <Img20230519Wa0048></Img20230519Wa0048>
     },
     {
         title: 'August 2023',
         subtitle: '... Wanderung - Jochberg Walchensee',
-        src: '/IMG-20230813-WA0058.jpg'
+        src: 'IMG-20230813-WA0058.jpg'
     },
     {
         title: 'November 2023',
         subtitle: 'Wanderung Josefsthaler Wasserfälle',
-        src: '/IMG-20231101-WA0130.jpg'
+        src: 'IMG-20231101-WA0130.jpg'
     },
     {
         title: 'November 2023',
         subtitle: 'Karneval Mainz',
-        src: '/IMG-20231111-WA0069.jpg'
+        src: 'IMG-20231111-WA0069.jpg'
     },
     {
         title: 'Dezember 2023',
         subtitle: 'Viel Schnee in München',
-        src: '/IMG-20231203-WA0036.jpg'
+        src: 'IMG-20231203-WA0036.jpg'
     },
     {
         title: 'Jannuar 2024',
         subtitle: 'Snowboarden Wilder Kaiser',
-        src: '/IMG-20240104-WA0020.jpg'
+        src: 'IMG-20240104-WA0020.jpg'
     },
     {
         title: 'Mai 2024',
         subtitle: 'Erstes mal gemeinsam in Peru - Silvi Familie',
-        src: '/IMG-20240529-WA0062.jpg'
+        src: 'IMG-20240529-WA0062.jpg'
     },
     {
         title: 'August 2024',
         subtitle: '... ',
-        src: '/IMG-20240816-WA0023.jpg'
+        src: 'IMG-20240816-WA0023.jpg'
     },
     {
         title: 'Februar 2025',
         subtitle: 'Zweites mal in Peru - Silvi Geburtstag',
-        src: '/IMG-20250215-WA0106.jpg'
+        src: 'IMG-20250215-WA0106.jpg'
     },
     {
         title: 'Februar 2025',
         subtitle: `Leckere Jugo's mit Silvis Pa`,
-        src: '/IMG-20250221-WA0031.jpg'
+        src: 'IMG-20250221-WA0031.jpg'
     },
     {
         title: 'März 2025',
         subtitle: 'Silvi bekommt einen Ring in Peru',
-        src: '/IMG-20250302-WA0062.jpg'
+        src: 'IMG-20250302-WA0062.jpg'
     },
     {
         title: 'Juli 2025<',
         subtitle: 'Erinnerungen an Peru Daheim beim Essen',
-        src: '/IMG-20250726-WA0029.jpg'
+        src: 'IMG-20250726-WA0029.jpg'
     }
 ];
 
 images.forEach(i =>{
-    i.src = '/placeholderImg.jpg';
+    i.src = 'placeholderImg.jpg';
 })
 
 

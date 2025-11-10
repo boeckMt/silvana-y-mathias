@@ -16,7 +16,7 @@ export const IntroSection = component$<ItemProps>((props) => {
             id={props.id}>
 
             <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="/placeholter2.png" class="intro-image has-text-centered" alt="intro image" width={100} height={20}></img>
+                <img src="placeholter2.png" class="intro-image has-text-centered" alt="intro image" width={100} height={20}></img>
             </div>
 
             <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
