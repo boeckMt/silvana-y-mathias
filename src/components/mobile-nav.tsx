@@ -3,10 +3,15 @@ import { $, component$ } from '@builder.io/qwik'
 interface ItemProps {
     items: NavItem[]
 }
+
 export const MobileNav = component$<ItemProps>((props) => {
     const navClick = $((item: NavItem) => {
+        const menu = document.getElementById('menu-switch') as HTMLInputElement;
         props.items.map(i => i.active.value = false);
         item.active.value = true;
+        // close menu
+        menu.checked = false;
+
     });
     return (
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
