@@ -11,6 +11,7 @@
     --bg-2-color: rgba(202, 140, 131, .8);
     --scrollbar-thumb-color: rgb(169 85 103);
     --bg-3-color: rgba(230, 212, 205, .8);
+    --bg-4-color: rgba(62, 56, 55, 1);
     --bg-footer-color: rgb(169 85 103);
 }
 
@@ -64,6 +65,8 @@ html {
 body{
     main{
         width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 }
 
@@ -110,7 +113,7 @@ body{
 }
 
 .navbar-menu {
-    background-color: var(--bg-2-color);
+    background-color: var(--bg-4-color);
     --bulma-navbar-item-color: #fff;
     --bulma-focus-h: rgba(33, 13, 14);
     padding: 0;
@@ -126,7 +129,7 @@ body{
     .title {
         font-family: $font-family_3;
         font-weight: 700;
-        transform: rotate(-2deg);
+        // transform: rotate(-2deg);
         font-size: 5rem;
         padding-bottom: 5px;
         color: $color_3;
@@ -200,8 +203,8 @@ body{
 }
 
 .hero-body {
-    background-image: url('/Llamitas_Hochzeit_scan.jpg');
-    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('/Llamitas_Hochzeit_scan.jpg') no-repeat;
+    background-image: url('Llamitas_Hochzeit_scan.jpg');
+    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('Llamitas_Hochzeit_scan.jpg') no-repeat;
     background-size: 60%;
     background-position-x: center;
     background-position-y: center;
