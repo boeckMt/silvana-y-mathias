@@ -1,5 +1,5 @@
 import { component$, useSignal } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { AccommodationSection } from "~/components/accommodation-section";
 import { AosInit } from "~/components/AosInit";
 import { FooterSection } from "~/components/footer-section";
@@ -12,6 +12,7 @@ import { MobileNav } from "~/components/mobile-nav";
 import { ProgrammSection } from "~/components/programm-section";
 import { RsvpSection } from "~/components/rsvp-section";
 import { DateTimeSection } from "~/components/date-time-section";
+// import { setReplCorsHeaders } from "~/utils/utils";
 
 
 export default component$(() => {
@@ -26,16 +27,27 @@ export default component$(() => {
     images: 'images'
   };
 
+  const activeHome = useSignal(true);
+  const activeIntro = useSignal(false);
+  const activeDate = useSignal(false);
+  const activeAccommodation = useSignal(false);
+  const activeLocation = useSignal(false);
+  const activeProgram = useSignal(false);
+  const activeRsvp = useSignal(false);
+  const activeImages = useSignal(false);
+
   const navItems: NavItem[] = [
-    { href: `#${ids.home}`, title: 'Home', active: useSignal(true) },
-    { href: `#${ids.intro}`, title: 'Willkommen', active: useSignal(false) },
-    { href: `#${ids.date}`, title: 'Datum', active: useSignal(false) },
-    { href: `#${ids.accommodation}`, title: 'Unterkunft', active: useSignal(false) },
-    { href: `#${ids.location}`, title: 'Anreise', active: useSignal(false) },
-    { href: `#${ids.program}`, title: 'Programm', active: useSignal(false) },
-    { href: `#${ids.rsvp}`, title: 'RSVP', active: useSignal(false) },
-    { href: `#${ids.images}`, title: 'Bilder', active: useSignal(false) }
+    { href: `#${ids.home}`, title: 'Home', active: activeHome },
+    { href: `#${ids.intro}`, title: 'Willkommen', active: activeIntro },
+    { href: `#${ids.date}`, title: 'Datum', active: activeDate },
+    { href: `#${ids.location}`, title: 'Anreise', active: activeLocation },
+    { href: `#${ids.accommodation}`, title: 'Unterkunft', active: activeAccommodation },
+    
+    { href: `#${ids.program}`, title: 'Programm', active: activeProgram },
+    { href: `#${ids.rsvp}`, title: 'RSVP', active: activeRsvp },
+    { href: `#${ids.images}`, title: 'Bilder', active: activeImages },
   ];
+
 
   return (
     <main>
@@ -73,3 +85,13 @@ export const head: DocumentHead = {
     },
   ],
 };
+
+// https://github.com/QwikDev/qwik/issues/7942
+// https://github.com/QwikDev/qwik/pull/7946/files
+/* export const onGet: RequestHandler = ({ cacheControl, headers }) => {
+  cacheControl({
+    public: true,
+    maxAge: 3600,
+  });
+  setReplCorsHeaders(headers);
+}; */

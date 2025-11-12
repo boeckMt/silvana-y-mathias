@@ -6,10 +6,10 @@ const locationText = {
     text3: '83043 Bad Aibling'
 }
 
-const locationText2 = {
+/* const locationText2 = {
     text1: 'Anreise mit dem Auto',
-    text2: 'Anreise mit den Öffentlichen',
-}
+    text2: 'Anreise mit den Öffentlichen'
+} */
 
 const maps = {
     frameSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.6635369899664!2d11.985220412515773!3d47.88484117109674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47761d9b96514047%3A0x43265fbf4856ca61!2sB%26O%20Parkhotel!5e0!3m2!1sde!2sde!4v1762608686782!5m2!1sde!2sde",
@@ -39,7 +39,7 @@ export const LocationSection = component$<ItemProps>((props) => {
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe 
-                           /** @ts-ignore */
+                           /** @ts-expect-error - referrerpolicy is not supported everywhere */
                            src={maps.frameSrc} width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
