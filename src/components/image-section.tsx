@@ -27,73 +27,73 @@ const images: IimageCard[] = [
     {
         title: 'Mai 2023',
         subtitle: 'Unsere erste gemainsame Wanderung - Graseck Kochelsee',
-        src: 'https://lh3.googleusercontent.com/pw/AP1GczNxV0kEaasZ4XSVk7n-8RFER91ZmKrgSldjMUpiiJwlVIfVr7j9moRJ6yVD2_ofRcTqi4hk6JJdR8UAeHMWoMYahx0ZcoAj__pEQcL5SQNA8Qaj711fvi0XwqrV9tHfkmqjAIOSMENYMNrdssV7taV3=w1824-h1368-s-no-gm?authuser=0',
+        src: 'https://lh3.googleusercontent.com/d/1mSqjhF95Wqs0gas4w9xxyIjScUtvCKOS=s4000?authuser=0',
         // src: 'IMG-20230519-WA0048.jpg' // <Img20230519Wa0048></Img20230519Wa0048>
     },
     {
         title: 'August 2023',
         subtitle: '... Wanderung - Jochberg Walchensee',
-        src: 'https://photos.google.com/share/AF1QipPyiasLQAZkCjXiC4WpX3hDNxmSnU2CG4jXq6tLPm3e5NMm_dENXbowl7byJldxdw/photo/AF1QipMdsVNGhimMXFOpBoWPM0xBIMZnxQNVwEo0GMAH?key=UDFnZHp3SXZ3X3NVZlhWX01DWklhV1BKY3BpcmVB',
+        src: 'https://lh3.googleusercontent.com/d/1cOARtL-Le9Gyeeko71VUiv1-JGS-vxXZ=s4000?authuser=0',
         // src: 'IMG-20230813-WA0058.jpg'
     },
     {
         title: 'November 2023',
         subtitle: 'Wanderung Josefsthaler Wasserfälle',
-        src: 'https://photos.google.com/share/AF1QipOSJmbP-1MdLAV6EcOI0mk0Eu1SzAHSHCiuWCyq5kCi-XSA3GjcTojyFmGRN6RVDw/photo/AF1QipPpa3SCLMd1pahjb5rPjI0OFeGot8GFPLyqrJZb?key=NGVGZzRNc2x6cTg0SjdaUjc0ekQ5YzE5Q29sZnlR',
+        src: 'https://lh3.googleusercontent.com/d/1WS9Efk_kMSDi3eIM5U-GjdQ0QQYzS2sp=s4000?authuser=0',
         // src: 'IMG-20231101-WA0130.jpg'
     },
     {
         title: 'November 2023',
         subtitle: 'Karneval Mainz',
-        src: 'https://photos.google.com/share/AF1QipNpxd5orIxBlUEGx-FCdBIpMDrWuPXnYUcRM13Gvfm80fKRmEGCmCYspqwndrK96A/photo/AF1QipNRScZl41KkJ-cOHMYx_uvX0eGOij2BsaKsI8Ej?key=MnZ4dW9BS2pJai1SbFBBRXhtRXoxTjR6bllyTXV3',
+        src: 'https://lh3.googleusercontent.com/d/1_RsOrsGMMzCuEZmI3XORREN2aW4YGjTw=s4000?authuser=0',
         // src: 'IMG-20231111-WA0069.jpg'
     },
     {
         title: 'Dezember 2023',
         subtitle: 'Viel Schnee in München',
-        src: 'https://photos.google.com/share/AF1QipNJ2ny_lTAlosQD1Fanw88vLgfBiJsKIPgZHydh-XPagVVvqt5q9Ftlizb9t0-6xw/photo/AF1QipP5pnNpkvZHhZQfhRI-t_fEGZW-Qbg7Xmo4WvqO?key=c2h3SXoxeHlRMU9hc29ZOXNLOXMwUktLdlY3OURR',
+        src: 'https://lh3.googleusercontent.com/d/16LCdDaOa7ulaodVerWT4Y0xSVQGmleTN=s4000?authuser=0',
         // src: 'IMG-20231203-WA0036.jpg'
     },
     {
         title: 'Jannuar 2024',
         subtitle: 'Snowboarden Wilder Kaiser',
-        src: 'https://photos.google.com/share/AF1QipOmQIZ0zDTEw9F55sY6LJfEi5F7wcHYuvclb56QdgKPI_9xXbHKQH06x_8NYTVFBQ/photo/AF1QipOHsrgKKmiCx-JSWiutDRO6rasIwS7rpta25JVD?key=QlZjaTZKOHpSMmp0V3ZIak10dTBXNHczNWs4TXd3',
+        src: 'https://lh3.googleusercontent.com/d/1rYZ7S5S6z31gFePpnNg3oUzOSTqUBWXU=s4000?authuser=0',
         // src: 'IMG-20240104-WA0020.jpg'
     },
     {
         title: 'Mai 2024',
         subtitle: 'Erstes mal gemeinsam in Peru - Silvi Familie',
-        src: 'https://photos.google.com/share/AF1QipOilEbkg8p002__rmDgRVWyC9dUlcuFo8yabzsnUNVW-mhNQMtjEfwzBQTbMmPBdw/photo/AF1QipMZcCJ1I3lihYaspoBHWhA6yz7AlJLiuITaF4rR?key=VTU2SDlYdlc1MUFHUE0wVmdZTmZKdUs4dklObjJB',
+        src: 'https://lh3.googleusercontent.com/d/1hVy0ZHczMtpIPjHKuPYPJnfr80uOWhwl=s4000?authuser=0',
         // src: '20240512_170041.jpg'
     },
     {
         title: 'August 2024',
         subtitle: '... ',
-        src: 'https://photos.google.com/share/AF1QipO63E85dWiWTFF5scYGDCAM3a6EuWkwm5AWhL0sD5zUcacOKotIVZi1ETC_q2VDzw/photo/AF1QipP_e6iSOXpI7A0KHkLbl604BQbTwcEqEw5BgOgF?key=Skl5UE5wamlBdW82aUpsOS01OFgwMVdyTW40UC1B',
+        src: 'https://lh3.googleusercontent.com/d/1nwud_2H0AMFjwkLiHMJRklck_11asGWo=s4000?authuser=0',
         // src: 'IMG-20240816-WA0023.jpg'
     },
     {
         title: 'Februar 2025',
         subtitle: 'Zweites mal in Peru - Silvi Geburtstag',
-        src: 'https://photos.google.com/share/AF1QipO9aIXWtDcZuEeNXLk2iy3iQdVjDMqCzCFQQehSbQsSu_IHKngr5YIJNKBUGB4EZQ?key=UWtRU2U4ZG9MM2lYYlNBSXJ0UWVtQ2Z3OFZsemV3',
+        src: 'https://lh3.googleusercontent.com/d/1OcIt94203QGTxHZ0CLWMTbf7eMX5wZnM=s4000?authuser=0',
         // src: 'IMG-20250215-WA0106.jpg'
     },
     {
         title: 'Februar 2025',
         subtitle: `Leckere Jugo's mit Silvis Pa`,
-        src: 'https://photos.google.com/share/AF1QipOV-9Dzv09km1mRqE71EQcHXK1hAPvjydB0zCVKUP4lbw--IkNPeIA476PVa2F9gw/photo/AF1QipPmiR-Q2ltLhF522jWQG8Dq0rHVu87kIh_bCk3n?key=UWxDb1NjSEdMSVZQM3ZGQmZFUjM1cm90MmVUbURn',
+        src: 'https://lh3.googleusercontent.com/d/1_GdH_ojsnaFcDQbUle8N7h3TUpttxIKM=s4000?authuser=0',
         // src: 'IMG-20250221-WA0031.jpg'
     },
     {
         title: 'März 2025',
         subtitle: 'Silvi bekommt einen Ring in Peru',
-        src: 'https://photos.google.com/share/AF1QipPXPq_Gnj7hQ5frfC8kc8gEbnbQwqF16F4L-hTSZEDB6KDphlWPv2SOpjNEdraLOQ/photo/AF1QipNubXPnO_dLYMrF4-THUOWqVX8YP8rvj6UZQNqQ?key=WUJvTFlzbWZTZWZlUkI3cXhQeVpEYXBNb192aVRn',
+        src: 'https://lh3.googleusercontent.com/d/1_avnMruKAUll0sCovLZraPuG7iXISSrZ=s4000?authuser=0',
         // src: 'IMG-20250302-WA0062.jpg'
     },
     {
         title: 'Juli 2025<',
         subtitle: 'Erinnerungen an Peru Daheim beim Kochen',
-        src: 'https://photos.google.com/share/AF1QipNxTLUaCGRSSmfLLJh_klEhWbHjIVkvd6fgJUMiXWJ2PA1YnAtS0wcNCCNAm0coOQ/photo/AF1QipM9wmtv5c4vDN4wJqQpLn-Pu9FVu6fqlDr1CHkv?key=TzZTNzFnOENIUHhHeDd5RzhnZWFwZDNNc2pUTFlB',
+        src: 'https://lh3.googleusercontent.com/d/18LHHzGAgh7M7YTp_ciRzi1pS1mJhu2e_=s4000?authuser=0',
         // src: 'IMG-20250726-WA0029.jpg'
     }
 ];
@@ -102,7 +102,7 @@ const images: IimageCard[] = [
     i.src = 'placeholderImg.jpg';
 }) */
 
-const imageEnd = 'https://photos.google.com/share/AF1QipO6fJkuBhha6iaFM9bn-dS9X4nGuCtJw0vDpZ1V4Ex6a0U-irHw1Yv1A2ezMZ8uIg/photo/AF1QipN0txOdkA9qvnr5rSROQ8FajksIVDTf242AV58Z?key=Yl85MjVBYWR3YUl5OHBpa2RkV0J5dDlMa0RiaS1n';
+const imageEnd = 'https://lh3.googleusercontent.com/d/1D8LXL1zwOCXCJtFCbyizmWnhDMQiLWqN=s4000?authuser=0';
 
 
 
@@ -125,7 +125,7 @@ export const ImageSection = component$<ItemProps>((props) => {
                                     <article class="card" data-aos="fade-up" data-aos-easing="linear">
                                         <div class="card-image">
                                             <figure class="image is-4by3">
-                                                <img src={item.src} width={533} height={400} />
+                                                <img src={item.src} width={533} height={400} crossOrigin="anonymous" />
                                             </figure>
                                         </div>
                                         <div class="card-content">

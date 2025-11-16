@@ -4,8 +4,8 @@ interface ItemProps {
     id: string;
 }
 
-const imageTop = 'https://photos.google.com/share/AF1QipMVvn4wb8o9qkuKJdbTrIDhGmc_2ocsVP_rCtVX4RRGEeFWj5G5jn772KqbNbODaA/photo/AF1QipNrCS_TcfRsu8BJZ3K7XEeuuvFqJBt1Vpzl9x1k?key=OVB5b01OZ2ZmeXlXVEhIaFQ5VG15M3dXMDdVdTVB';
-const imageEnd = 'https://photos.google.com/share/AF1QipO6fJkuBhha6iaFM9bn-dS9X4nGuCtJw0vDpZ1V4Ex6a0U-irHw1Yv1A2ezMZ8uIg/photo/AF1QipN0txOdkA9qvnr5rSROQ8FajksIVDTf242AV58Z?key=Yl85MjVBYWR3YUl5OHBpa2RkV0J5dDlMa0RiaS1n';
+const imageTop = 'https://lh3.googleusercontent.com/d/17dbZi2y___lcUQsCrXQ1s4Xnf6RyETKS=s4000?authuser=0';
+const imageEnd = 'https://lh3.googleusercontent.com/d/1D8LXL1zwOCXCJtFCbyizmWnhDMQiLWqN=s4000?authuser=0';
 
 const introText = {
     text1: 'Liebe Freunde und Verwandte, wir freuen uns sehr euch zu unserer Hochzeit einzuladen.',
