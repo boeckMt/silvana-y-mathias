@@ -759,3 +759,15 @@ body.preloader-site {
         line-height: 3rem;
     }
 }
+
+//i18n
+.locale-selector {
+    a {
+        padding: 0 0.5rem;
+        --bulma-link-text: var(--overlay-color);
+
+        &[aria-disabled="true"] {
+            border-bottom: 2px solid var(--overlay-color);
+        }
+    }
+}

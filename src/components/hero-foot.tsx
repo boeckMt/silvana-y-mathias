@@ -1,4 +1,5 @@
 import { $, component$ } from '@builder.io/qwik'
+import { LocaleSelector } from './locale-selector';
 
 interface ItemProps {
   items: NavItem[]
@@ -22,6 +23,8 @@ export const HeroFoot = component$<ItemProps>((props) => {
                 </li>
               ))}
             </ul>
+
+            <LocaleSelector></LocaleSelector>
           </div>
         </div>
       </div>

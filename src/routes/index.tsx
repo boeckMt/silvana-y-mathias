@@ -12,6 +12,7 @@ import { MobileNav } from "~/components/mobile-nav";
 import { ProgrammSection } from "~/components/programm-section";
 import { RsvpSection } from "~/components/rsvp-section";
 import { DateTimeSection } from "~/components/date-time-section";
+import { guessLocale } from "compiled-i18n";
 // import { setReplCorsHeaders } from "~/utils/utils";
 
 
@@ -42,7 +43,7 @@ export default component$(() => {
     { href: `#${ids.date}`, title: 'Datum', active: activeDate },
     { href: `#${ids.location}`, title: 'Anreise', active: activeLocation },
     { href: `#${ids.accommodation}`, title: 'Unterkunft', active: activeAccommodation },
-    
+
     { href: `#${ids.program}`, title: 'Programm', active: activeProgram },
     { href: `#${ids.rsvp}`, title: 'RSVP', active: activeRsvp },
     { href: `#${ids.images}`, title: 'Bilder', active: activeImages },
@@ -85,6 +86,12 @@ export const head: DocumentHead = {
     },
   ],
 };
+
+export const onRequest: RequestHandler = async ({ query, headers, locale }) => {
+    // Allow overriding locale with query param `locale`
+    const maybeLocale = query.get('locale') || headers.get('accept-language');
+    locale(guessLocale(maybeLocale))
+}
 
 // https://github.com/QwikDev/qwik/issues/7942
 // https://github.com/QwikDev/qwik/pull/7946/files
