@@ -2,7 +2,7 @@
 
 import { component$ } from '@builder.io/qwik'
 import { Countdown } from './countdown';
-import { _ } from 'compiled-i18n';
+import { inlineTranslate } from 'qwik-speak';
 
 const heroText = {
     title1: 'Hochzeit von',
@@ -13,10 +13,11 @@ const heroText = {
 }
 
 export const HeroBody = component$(() => {
+    const t = inlineTranslate();
     return (
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 class="subtitle">{_`Title1 ${heroText.title1}`}</h1>
+                <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
                 <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
                 <h4 class="subtitle hero-body-title">
                     {heroText.title3}

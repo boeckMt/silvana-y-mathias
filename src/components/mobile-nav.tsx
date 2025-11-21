@@ -1,4 +1,5 @@
 import { $, component$ } from '@builder.io/qwik'
+import { ChangeLocale } from './change-locale/change-locale';
 
 interface ItemProps {
     items: NavItem[]
@@ -37,6 +38,7 @@ export const MobileNav = component$<ItemProps>((props) => {
                         </a>
                     ))}
                 </div>
+                <ChangeLocale></ChangeLocale>
             </div>
         </nav>
     )

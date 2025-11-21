@@ -22,7 +22,8 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
-    "qwik": "qwik"
+    "qwik": "qwik",
+    "qwik-speak-extract": "qwik-speak-extract --supportedLangs=de-DE,es-ES,en-EN --assetsPath=i18n --unusedKeys=true"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.16.1",
@@ -34,6 +35,7 @@
     "eslint-plugin-qwik": "^1.16.1",
     "globals": "16.3.0",
     "prettier": "3.6.2",
+    "qwik-speak": "^0.23.2",
     "sass-embedded": "^1.93.2",
     "typescript": "5.4.5",
     "typescript-eslint": "8.38.0",

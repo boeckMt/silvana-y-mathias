@@ -760,14 +760,16 @@ body.preloader-site {
     }
 }
 
-//i18n
-.locale-selector {
-    a {
-        padding: 0 0.5rem;
-        --bulma-link-text: var(--overlay-color);
 
-        &[aria-disabled="true"] {
-            border-bottom: 2px solid var(--overlay-color);
+// lang
+.lang-switcher {
+    a {
+        // margin: 0.5rem 0.5rem;
+        padding: 0rem 0.5rem;
+        color: var(--bulma-navbar-item-color);
+        &.active{
+            background-color: rgba(255, 255, 255, 0.2);
+            color: var(--bulma-navbar-item-selected-color-l);
         }
     }
 }
