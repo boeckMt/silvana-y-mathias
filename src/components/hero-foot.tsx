@@ -1,4 +1,5 @@
-import { $, component$ } from '@builder.io/qwik'
+import { $, component$ } from '@builder.io/qwik';
+import { ChangeLocale } from './change-locale/change-locale';
 
 interface ItemProps {
   items: NavItem[]
@@ -14,7 +15,7 @@ export const HeroFoot = component$<ItemProps>((props) => {
         <div class="columns">
           <div class="column is-12 hero-menu-desktop has-text-centered">
             <ul>
-              {props.items.map((item,index) => (
+              {props.items.map((item, index) => (
                 <li key={`nav-item${index}`} class={{ 'is-active': item.active.value }} onClick$={() => {
                   navClick(item);
                 }}>
@@ -22,6 +23,7 @@ export const HeroFoot = component$<ItemProps>((props) => {
                 </li>
               ))}
             </ul>
+            <ChangeLocale></ChangeLocale>
           </div>
         </div>
       </div>
