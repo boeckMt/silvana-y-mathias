@@ -96,7 +96,7 @@ body {
     letter-spacing: 1px;
     font-size: 1rem;
 
-    &:hover{
+    &:hover {
         color: #000;
     }
 }
@@ -382,6 +382,16 @@ body {
     .no-padding-top {
         padding-top: 0px;
     }
+}
+
+.card {
+    --bulma-card-color: var(--bulma-text);
+    --bulma-card-background-color: var(--overlay-color-65);
+
+    .title, .subtitle {
+        color: #fff;
+    }
+
 }
 
 .section-map {
