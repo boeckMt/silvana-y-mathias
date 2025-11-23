@@ -23,10 +23,11 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
 export default defineConfig(({ command, mode }): UserConfig => {
   return {
     // base repo name https://qwik.dev/docs/deployments/github-pages/
-    base: '/silvana-y-mathias',
+    base: '/silvana-y-mathias/',
     plugins: [
       qwikCity(),
       qwikVite(),
+      // https://github.com/robisim74/qwik-speak/blob/main/docs/inline.md#configure
       qwikSpeakInline({
         supportedLangs: ['de-DE', 'es-ES', 'en-EN'],
         defaultLang: 'de-DE',

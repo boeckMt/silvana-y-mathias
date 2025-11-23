@@ -26,12 +26,11 @@ import { config } from './speak-config';
  */
 export function extractBase({ serverData }: RenderOptions): string {
   if (!isDev && serverData?.locale) {
-    return '/build/' + serverData.locale;
+    return `${import.meta.env.BASE_URL}build/${serverData.locale}`;
   } else {
-    return '/build';
+    return `/build`;
   }
 }
-
 
 export default function (opts: RenderToStreamOptions) {
   return renderToStream(<Root />, {

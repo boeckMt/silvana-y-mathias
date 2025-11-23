@@ -226,10 +226,10 @@ body {
 }
 
 .hero-body {
-    background-image: url('Llamitas_Hochzeit_scan.jpg');
-    // background-image: url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0');
-    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('/Llamitas_Hochzeit_scan.jpg') no-repeat;
-    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0') no-repeat;
+    // background-image: url('Llamitas_Hochzeit_scan.jpg');
+    background-image: url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0');
+    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('Llamitas_Hochzeit_scan.jpg') no-repeat;
+    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0') no-repeat;
     background-size: 60%;
     background-position-x: center;
     background-position-y: center;
