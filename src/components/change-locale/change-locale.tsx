@@ -31,7 +31,7 @@ const localizeDomain = (url: URL, lang: string): URL => {
     return url;
 };
 
-export const localizePath = (): LocalizePathFn => {
+const localizePath = (): LocalizePathFn => {
     const config = useSpeakConfig();
     const currentLang = getLang();
 
@@ -106,7 +106,8 @@ export const ChangeLocale = component$(() => {
         <>
             <div class="lang-switcher">
                 {config.supportedLocales.map(value => (
-                    <a key={value.lang} class={{ active: value.lang == locale.lang }} href={getPath(pathname, value.lang)}>
+                    <a key={value.lang} class={{ active: value.lang == locale.lang }} href={getPath(pathname, value.lang)}
+                        title={dn(value.lang, { type: 'language' })}>
                         {getLangDis(value.lang)}
                     </a>
                 ))}

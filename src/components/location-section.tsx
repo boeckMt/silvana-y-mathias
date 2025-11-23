@@ -38,7 +38,7 @@ export const LocationSection = component$<ItemProps>((props) => {
 
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe 
+                        <iframe class="gmap_iframe" 
                            /** @ts-expect-error - referrerpolicy is not supported everywhere */
                            src={maps.frameSrc} width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>

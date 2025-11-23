@@ -17,6 +17,7 @@ export const MobileNav = component$<ItemProps>((props) => {
     return (
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
+                <ChangeLocale></ChangeLocale>
                 <label for="menu-switch" class="navbar-burger" role="button" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -38,7 +39,6 @@ export const MobileNav = component$<ItemProps>((props) => {
                         </a>
                     ))}
                 </div>
-                <ChangeLocale></ChangeLocale>
             </div>
         </nav>
     )

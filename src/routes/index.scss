@@ -14,6 +14,7 @@
     --bg-3-color: rgba(230, 212, 205, .8);
     --bg-4-color: rgba(62, 56, 55, 1);
     --bg-footer-color: rgb(169 85 103);
+    --lang-switcher-active-color: rgba(33, 13, 14, .23);
 }
 
 $color_1: var(--overlay-color);
@@ -45,6 +46,7 @@ $background-color_11: #26ade4;
 .app {
     position: relative;
     width: 100%;
+    //height: 100%;
 }
 
 .has-vertically-aligned-content {
@@ -53,15 +55,23 @@ $background-color_11: #26ade4;
     justify-content: center;
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
+
+
 
 html {
     font-family: $font-family_1;
     position: absolute;
     width: 100%;
     min-height: 100%;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -85,12 +95,16 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1rem;
+
+    &:hover{
+        color: #000;
+    }
 }
 
 .navbar-item.is-active {
     border-bottom: 2px solid var(--overlay-color);
     //--bulma-navbar-item-background-a: 0 !important;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--lang-switcher-active-color);
     --overlay-color: var(--scrollbar-thumb-color);
 }
 
@@ -99,6 +113,9 @@ body {
 }
 
 .navbar {
+    position: relative;
+    max-width: 100%;
+    max-width: 100vh;
     display: none;
 }
 
@@ -119,7 +136,7 @@ body {
 }
 
 .navbar-menu {
-    background-color: var(--bg-4-color);
+    background-color: var(--overlay-color-65);
     --bulma-navbar-item-color: #fff;
     --bulma-focus-h: rgba(33, 13, 14);
     padding: 0;
@@ -209,10 +226,10 @@ body {
 }
 
 .hero-body {
-    // background-image: url('Llamitas_Hochzeit_scan.jpg');
-    background-image: url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0'); //url('Llamitas_Hochzeit_scan.jpg');
-    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('Llamitas_Hochzeit_scan.jpg') no-repeat;
-    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0') no-repeat;
+    background-image: url('Llamitas_Hochzeit_scan.jpg');
+    // background-image: url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0');
+    background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('/Llamitas_Hochzeit_scan.jpg') no-repeat;
+    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0') no-repeat;
     background-size: 60%;
     background-position-x: center;
     background-position-y: center;
@@ -224,6 +241,7 @@ body {
 
 
 .main-content {
+    background-color: #fff;
     color: $color_4;
     font-family: $font-family_2;
 
@@ -444,6 +462,13 @@ body {
             color: $color_3;
         }
     }
+
+    .container {
+        a {
+            display: inline-flex;
+            padding: 0 0.5rem;
+        }
+    }
 }
 
 .fa-download {
@@ -451,7 +476,7 @@ body {
 }
 
 .divider {
-    margin: 40px 25px;
+    padding: 40px 25px;
     display: inline-block;
     max-height: 100px;
     vertical-align: middle;
@@ -464,32 +489,6 @@ body {
     vertical-align: middle;
 }
 
-#toTop {
-    height: 50px;
-    width: 50px;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: $background-color_5;
-    color: $color_2;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 2rem;
-    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
-
-    a {
-        color: $color_2;
-    }
-
-    &:hover {
-        background-color: $background-color_6;
-    }
-}
-
 /* ::-webkit-scrollbar {
     width: 8px;
     background-color: $background-color_2;
@@ -499,28 +498,6 @@ body {
     background-color: $background-color_7;
 } */
 
-body.preloader-site {
-    overflow: hidden;
-}
-
-.preloader-wrapper {
-    height: 100%;
-    width: 100%;
-    background: #D8A9A8;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-
-    .preloader {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 120px;
-    }
-}
 
 .btn-whatsapp {
     &:hover {
@@ -573,68 +550,6 @@ body.preloader-site {
     margin: 1rem;
 }
 
-.cashbac-logo-inline {
-    width: 160px;
-    vertical-align: middle;
-}
-
-.button-download {
-    min-width: 200px;
-    height: 55px;
-    align-items: center;
-    margin: 0.1rem;
-}
-
-.voucher-code {
-    height: 55px;
-    max-width: 180px;
-    border: 2px solid #26ade4;
-    border-radius: 10px 0 0 10px;
-    font-size: 24px;
-    padding: 15px;
-}
-
-.btn-voucher-code {
-    height: 55px;
-    min-width: 100px;
-    border: 2px solid #26ade4;
-    background-color: $background-color_11;
-    border-radius: 0 10px 10px 0;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    color: $color_2;
-}
-
-.fa-copy {
-    margin-right: 5px;
-}
-
-.white {
-    color: $color_6;
-}
-
-.dusty-pink {
-    color: $color_7;
-}
-
-.dusty-pink-lighter {
-    color: $color_8;
-}
-
-.dusty-pink-lightest {
-    color: $color_9;
-}
-
-.dusty-pink-darker {
-    color: $color_10;
-}
-
-.dusty-pink-darkest {
-    color: $color_1;
-}
-
 .tile {
     border-radius: 10px;
 }
@@ -658,10 +573,6 @@ body.preloader-site {
     flex-wrap: wrap;
 }
 
-.simply-amount {
-    padding-right: 0.2rem;
-}
-
 
 .section-light {
     // background-image: url("/19638.png");
@@ -681,8 +592,17 @@ body.preloader-site {
 }
 
 @media (max-width: 599px) {
-    .navbar {
-        display: block;
+    .hero {
+        min-height: 390px;
+
+        .navbar {
+            display: block;
+        }
+    }
+
+
+    .divider {
+        padding: 30px 0px;
     }
 
 
@@ -694,10 +614,6 @@ body.preloader-site {
     .main-content {
         .section-dark.resume {
             padding-top: 75px;
-        }
-
-        .section-dark.foto-foto {
-            padding: 75px 20px;
         }
 
         .section-light.regular-section {
@@ -764,12 +680,35 @@ body.preloader-site {
 // lang
 .lang-switcher {
     a {
-        // margin: 0.5rem 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--bulma-navbar-height);
         padding: 0rem 0.5rem;
         color: var(--bulma-navbar-item-color);
-        &.active{
-            background-color: rgba(255, 255, 255, 0.2);
+
+        &.active {
+            background-color: var(--lang-switcher-active-color);
             color: var(--bulma-navbar-item-selected-color-l);
+        }
+    }
+}
+
+.navbar {
+    .lang-switcher {
+        a {
+            min-height: var(--bulma-navbar-height);
+        }
+
+    }
+}
+
+.hero-menu-desktop {
+    .lang-switcher {
+        &.active {
+            background-color: var(--overlay-color);
+            color: var(--bulma-navbar-item-selected-color-l);
+            border-bottom: 2px solid var(--overlay-color);
         }
     }
 }
