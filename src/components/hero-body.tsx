@@ -7,7 +7,7 @@ import { inlineTranslate } from 'qwik-speak';
 const heroText = {
     title1: 'Hochzeit von',
     title2part1: 'Silvana',
-    title2part2: 'Y',
+    title2part2: 'y',
     title2part3: 'Mathias',
     title3: 'Samstag, 25 Juli 2026'
 }
