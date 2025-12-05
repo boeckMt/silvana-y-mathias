@@ -43,15 +43,17 @@ export const DateTimeSection = component$<ItemProps>((props) => {
 
                     </div>
                 </div>
-            </div>
+
             <div class="space40px"></div>
-            <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
                 <a href={timeText.calendarHref} target="_blank" class="button has-tooltip btn-cta"
                     data-tooltip="Add to Calendar" data-aos="zoom-in">
                     <i class="far fa-calendar-plus"></i>
                     &nbsp;&nbsp;{timeText.calendarTitle}
                 </a>
             </div>
+            </div>
+            
         </section>
     )
 });

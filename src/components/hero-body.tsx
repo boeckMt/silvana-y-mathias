@@ -15,22 +15,25 @@ const heroText = {
 export const HeroBody = component$(() => {
     const t = inlineTranslate();
     return (
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
-                <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
-                <h4 class="subtitle hero-body-title">
-                    {heroText.title3}
-                </h4>
-            </div>
-
-            <section class="countdownContainer">
-                <div id="countdownEle" class="has-text-centered">
+        <>
+            <div class="hero-body"></div>
+            <section class="hero-intro pb-3 section-light regular-section has-text-centered has-vertically-aligned-content">
+                <div class="container has-text-centered">
+                    <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
+                    <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
+                    <h4 class="subtitle hero-body-title">
+                        {heroText.title3}
+                    </h4>
                 </div>
-            </section>
-            <Countdown></Countdown>
 
-        </div>
+                <section class="countdownContainer">
+                    <div id="countdownEle" class="has-text-centered">
+                    </div>
+                </section>
+                <Countdown></Countdown>
+            </section>
+        </>
+
     )
 
 });

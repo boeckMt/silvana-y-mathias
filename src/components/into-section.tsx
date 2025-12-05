@@ -18,7 +18,7 @@ const introText = {
 
 export const IntroSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-light regular-section has-text-centered has-vertically-aligned-content"
+        <section class="section-color-2 regular-section has-text-centered has-vertically-aligned-content"
             id={props.id}>
 
             <div data-aos="fade-up" data-aos-easing="linear">
