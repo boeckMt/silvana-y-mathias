@@ -1,4 +1,4 @@
-import { $, component$, useSignal } from '@builder.io/qwik'
+import { $, component$, useSignal, useTask$ } from '@builder.io/qwik'
 import { getItems } from '~/utils/utils';
 
 interface ItemProps {
@@ -51,8 +51,10 @@ export const RsvpSection = component$<ItemProps>((props) => {
     const link2 = useSignal("");
     const { item1, item2 } = getItems();
 
-    link1.value = rsvpText.href1.replace('<number>', item1);
-    link2.value = songsText.href1.replace('<number>', item2);
+    useTask$(() => {
+        link1.value = rsvpText.href1.replace('<number>', item1);
+        link2.value = songsText.href1.replace('<number>', item2);
+    });
 
     const goToSite$ = $((v: 1 | 2) => {
         if (v === 1) {
@@ -163,7 +165,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
 
                             {/* <div class="space40px"></div>
                             <div data-aos="fade-up" data-aos-easing="linear">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="divider has-text-centered" alt="~~~" width={60} height={60}></img>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="divider has-text-centered" alt="" width={60} height={60}></img>
                             </div>
                             <div class="space40px"></div> */}
 

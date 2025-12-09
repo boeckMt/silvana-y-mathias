@@ -31,7 +31,6 @@ export default component$(() => {
     images: 'images'
   };
 
-  const activeHome = useSignal(true);
   const activeIntro = useSignal(false);
   const activeDate = useSignal(false);
   const activeAccommodation = useSignal(false);
@@ -41,7 +40,6 @@ export default component$(() => {
   const activeImages = useSignal(false);
 
   const navItems: NavItem[] = [
-    { href: `#${ids.home}`, title: 'Home', active: activeHome },
     { href: `#${ids.intro}`, title: 'Willkommen', active: activeIntro },
     { href: `#${ids.date}`, title: 'Datum', active: activeDate },
     { href: `#${ids.location}`, title: 'Anreise', active: activeLocation },

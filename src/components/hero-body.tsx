@@ -25,7 +25,7 @@ export const HeroBody = component$(() => {
                     <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
                     <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
                     <h4 class="subtitle hero-body-title">
-                        {heroText.title3}
+                        {t('app.hero.Title3@@{{heroText.title3}}')}
                     </h4>
                 </div>
 

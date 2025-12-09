@@ -1,6 +1,11 @@
 {
   "app": {
-    "changeLocale": "Change locale",
+    "count": {
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
     "head": {
       "home": {
         "description": "",
@@ -8,7 +13,8 @@
       }
     },
     "hero": {
-      "Title1": "Hochzeit von"
+      "Title1": "Hochzeit von",
+      "Title3": "Samstag, 25 Juli 2026"
     }
   }
 }
