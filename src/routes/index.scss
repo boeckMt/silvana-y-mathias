@@ -7,41 +7,37 @@
 /** ------------- */
 /** for google map */
 :root {
-    --overlay-color-65: rgba(33, 13, 14, .6);
-    --overlay-color: rgba(33, 13, 14, .8);
-    --bg-2-color: rgba(202, 140, 131, .8);
-    --scrollbar-thumb-color: rgb(169 85 103);
-    --bg-3-color: rgba(230, 212, 205, .8);
+    --overlay-color-65: #c28285; //rgba(33, 13, 14, .6);
+    --overlay-color: rgba(0, 0, 0, 1);
+    --bg-2-color: #e9c0bb; //rgba(202, 140, 131, .8);
+    --scrollbar-thumb-color: rgb(0, 0, 0);
+    --bg-3-color: #afc7be; // rgba(230, 212, 205, .8);
     --bg-4-color: rgba(62, 56, 55, 1);
-    --bg-footer-color: rgb(169 85 103);
+    --bg-footer-color: #e9c0bb;
     --lang-switcher-active-color: rgba(33, 13, 14, .23);
+    --w-btn-color: #6cc751;
+    --w-btn-b-color: #59a543;
+    --color-black: #000;
+    --color-white: #fff;
 }
 
-$color_1: var(--overlay-color);
-$color_2: white;
-$color_3: whitesmoke;
-$color_4: #000;
-$color_5: #43485c;
-$color_6: ghostwhite;
-$color_7: #D8A9A8;
-$color_8: var(--bg-3-color);
-$color_9: var(--bg-2-color);
-$color_10: #BC8887;
+$color1_1: #F4E2E2;
+$color1_2: #EDD2D1;
+$color1_3: #c28285;
+
+
+
+
+
+
 $font-family_1: 'Raleway', Tahoma, sans-serif;
 $font-family_2: 'Raleway', sans-serif;
 $font-family_3: 'Alex Brush', sans-serif;
-$font-family_4: 'Lato', sans-serif;
-$background-color_1: rgb(222 206 182);
-$background-color_2: var(--bg-2-color);
-$background-color_3: var(--bg-3-color);
-$background-color_4: rgb(238, 250, 253);
-$background-color_5: var(--overlay-color);
-$background-color_6: #BC8887;
-$background-color_7: var(--scrollbar-thumb-color);
-$background-color_8: #59a543;
-$background-color_9: #6cc751;
-$background-color_10: #bf7877;
-$background-color_11: #26ade4;
+
+
+
+
+
 
 .app {
     position: relative;
@@ -103,14 +99,14 @@ body {
 }
 
 .navbar-item.is-active {
-    border-bottom: 2px solid var(--overlay-color);
+    border-bottom: 2px solid $color1_2;
     //--bulma-navbar-item-background-a: 0 !important;
     background-color: var(--lang-switcher-active-color);
     --overlay-color: var(--scrollbar-thumb-color);
 }
 
 .a.navbar-item {
-    color: $color_1;
+    color: var(--overlay-color);
 }
 
 .navbar {
@@ -118,6 +114,7 @@ body {
     max-width: 100%;
     max-width: 100vh;
     display: none;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .navbar-burger {
@@ -146,8 +143,8 @@ body {
 .hero {
     background-color: #fff; //var(--overlay-color-65);
     // background-size: cover;
-    color: $color_2;
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--color-white);
+    // box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     font-family: $font-family_2;
     height: 100%;
     justify-content: unset; // overdide bulma! 
@@ -158,13 +155,13 @@ body {
         // transform: rotate(-2deg);
         font-size: 5rem;
         padding-bottom: 5px;
-        color: $color_4; //$color_3;
+        color: var(--color-black);
         word-spacing: 0.3rem;
     }
 
     .subtitle {
         padding: 0.5rem; // 35px;
-        color: $color_4; //$color_3;
+        color: var(--color-black);
         font-size: 1.3rem;
     }
 
@@ -208,10 +205,10 @@ body {
                     padding-left: 15px;
 
                     a {
-                        color: $color_1;
+                        color: var(--overlay-color);
 
                         &:hover {
-                            color: $color_1;
+                            color: var(--overlay-color);
                             transition: all .2s ease-in-out;
                             border-bottom: 2px solid var(--bg-footer-color);
                         }
@@ -228,53 +225,36 @@ body {
     }
 }
 
-.hero-body {
-    // background-image: url('/assets/llamitas_2.jpeg');
-    // background: #fff url('/assets/llamitas_2.jpeg') no-repeat;
-    background-image: url('https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0');
-    background: #fff url('https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0') no-repeat;
-
-
-    // background-image: url('Llamitas_Hochzeit_scan.jpg');
-    // background-image: url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0');
-    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('Llamitas_Hochzeit_scan.jpg') no-repeat;
-    // background: linear-gradient(var(--overlay-color-65), var(--overlay-color-65)), rgba(255, 255, 255, 1) url('https://lh3.googleusercontent.com/d/13SUTK47gYTx6ABqkLykn0S07mswUQuon=s4000?authuser=0') no-repeat;
-    background-size: 60%;
-    background-position-x: center;
-    background-position-y: center;
-    // color: $color_2;
-    color: hsl(0, 0%, 4%);
-    // box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    font-family: $font-family_2;
-    // text-shadow: -2px -2px 0 rgba(0, 0, 0, .8);
-    min-height: 360px;
-
-    flex-grow: 0; // overdide bulma!
+.hero-image {
+    display: flex;
+    justify-content: center;
 }
 
-.hero-intro{
+.hero-intro {
     background-color: #fff;
     color: #000;
+    font-family: $font-family_2;
 }
 
 
 .main-content {
     background-color: #fff;
-    color: $color_4;
+    color: var(--color-black);
     font-family: $font-family_2;
 
-    .section-dark {
-        background-color: $background-color_2;
-        padding: 80px 40px;
+    .color-1 {
+        background-color: $color1_1;
     }
 
-    .section-color-2 {
-        background-color: $background-color_3;
-        padding: 80px 40px;
+    .color-2 {
+        background-color: $color1_2;
     }
 
-    .section-color-3 {
-        background-color: $background-color_4;
+    .color-3 {
+        background-color: $color1_3;
+    }
+
+    .section-color {
         padding: 80px 40px;
     }
 
@@ -289,15 +269,12 @@ body {
         button {
             border: 2px solid var(--overlay-color);
             background: white;
-            color: $color_1;
+            color: var(--overlay-color);
+            ;
             height: 50px;
             width: 250px;
             font-size: 1rem;
             text-transform: uppercase;
-        }
-
-        .fa-download {
-            color: $color_1;
         }
     }
 
@@ -360,7 +337,7 @@ body {
 
         button {
             width: 100%;
-            color: $color_2;
+            color: var(--color-white);
             height: 50px;
             font-size: 1.1rem;
             text-transform: uppercase;
@@ -370,15 +347,15 @@ body {
 
     .section-color.pertanyaan {
         padding: 100px;
-        background-color: $background-color_5;
-        color: $color_2;
+        background-color: var(--overlay-color);
+        color: var(--color-white);
 
         .title {
-            color: $color_2;
+            color: var(--color-white);
         }
 
         .subtitle {
-            color: $color_2;
+            color: var(--color-white);
         }
 
         i {
@@ -390,7 +367,8 @@ body {
     .section-title {
         font-family: $font-family_2;
         font-weight: 900;
-        color: $color_1;
+        color: var(--overlay-color);
+        ;
         text-transform: uppercase;
         font-size: 1.5rem;
         letter-spacing: 0px;
@@ -405,6 +383,7 @@ body {
 .card {
     --bulma-card-color: var(--bulma-text);
     --bulma-card-background-color: var(--overlay-color-65);
+    --bulma-card-content-padding: 0.4rem;
 
     .title,
     .subtitle {
@@ -419,7 +398,8 @@ body {
 
 .name-big {
     font-family: $font-family_3;
-    color: $color_1;
+    color: var(--overlay-color);
+    ;
     font-size: 3rem;
     letter-spacing: 0px;
     padding-top: 0.5rem;
@@ -429,7 +409,8 @@ body {
 .ampersand {
     font-size: 4rem;
     font-family: $font-family_3;
-    color: $color_1;
+    color: var(--overlay-color);
+    ;
     line-height: 4rem;
     display: inline-block;
     vertical-align: top;
@@ -469,10 +450,10 @@ body {
     text-align: center;
     vertical-align: middle;
     background: var(--bg-footer-color);
-    color: $color_3;
+    color: whitesmoke;
 
     p {
-        color: $color_2;
+        color: var(--color-white);
         font-weight: 500;
         font-size: 10pt;
         display: inline-block;
@@ -486,11 +467,6 @@ body {
         vertical-align: middle;
     }
 
-    a {
-        .nav-item {
-            color: $color_3;
-        }
-    }
 
     .container {
         a {
@@ -498,10 +474,6 @@ body {
             padding: 0 0.5rem;
         }
     }
-}
-
-.fa-download {
-    color: $color_5;
 }
 
 .divider {
@@ -518,47 +490,43 @@ body {
     vertical-align: middle;
 }
 
-/* ::-webkit-scrollbar {
-    width: 8px;
-    background-color: $background-color_2;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $background-color_7;
-} */
-
 
 .btn-whatsapp {
+    &.mail {
+        --w-btn-b-color: #7d471b;
+        --w-btn-color: #894f1f;
+    }
+
     &:hover {
-        color: $color_2;
-        background-color: $background-color_8;
+        color: var(--color-white);
+        background-color: var(--w-btn-b-color);
         font-size: 1.2rem;
         border-radius: 10px;
-        border: 2px solid #59a543;
+        border: 2px solid var(--w-btn-b-color);
         width: 210px;
         height: 65px;
         align-items: center;
         margin: 1rem;
     }
 
-    background-color: $background-color_9;
+    background-color: var(--w-btn-color);
     width: 210px;
     height: 65px;
-    color: $color_2;
+    color: var(--color-white);
     font-size: 1.2rem;
     border-radius: 10px;
-    border-left: 1px solid #6cc751;
-    border-right: 1px solid #6cc751;
-    border-top: 1px solid #6cc751;
-    border-bottom: 1px solid #6cc751;
+    border-left: 1px solid var(--w-btn-color);
+    border-right: 1px solid var(--w-btn-color);
+    border-top: 1px solid var(--w-btn-color);
+    border-bottom: 1px solid var(--w-btn-color);
     align-items: center;
     margin: 1rem;
 }
 
 .btn-cta {
     &:hover {
-        color: $color_2;
-        background-color: $background-color_10;
+        color: var(--color-white);
+        background-color: #bf7877;
         font-size: 1.2rem;
         border-radius: 10px;
         border: 2px solid #bf7877;
@@ -568,12 +536,12 @@ body {
         margin: 1rem;
     }
 
-    background-color: $background-color_5;
+    background-color: #996E6D;
     width: 210px;
     height: 65px;
-    color: $color_2;
+    color: var(--color-white);
     font-size: 1.2rem;
-    border: 2px solid var(--overlay-color);
+    border: 2px solid #996E6D;
     border-radius: 10px;
     align-items: center;
     margin: 1rem;
@@ -627,6 +595,10 @@ body {
         .navbar {
             display: block;
         }
+    }
+
+    .hero-image {
+        margin-top: calc(var(--bulma-navbar-height) + 0.7rem);
     }
 
 
@@ -700,25 +672,38 @@ body {
     }
 
     .ampersand {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }
 
 
 // lang
 .lang-switcher {
+    --bulma-navbar-item-color: #fff;
+
     a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: var(--bulma-navbar-height);
         padding: 0rem 0.5rem;
-        color: var(--bulma-navbar-item-color);
+        color: var(--bulma-navbar-item-selected-color-l); // var(--bulma-navbar-item-color);
 
         &.active {
             background-color: var(--lang-switcher-active-color);
             color: var(--bulma-navbar-item-selected-color-l);
+            font-weight: bolder;
+        }
+    }
+}
+
+.hero-foot {
+    .lang-switcher {
+        a {
+            &.active {
+                background-color: $color1_2;
+            }
         }
     }
 }
@@ -737,7 +722,7 @@ body {
         &.active {
             background-color: var(--overlay-color);
             color: var(--bulma-navbar-item-selected-color-l);
-            border-bottom: 2px solid var(--overlay-color);
+            border-bottom: 2px solid var(--color-white);
         }
     }
 }

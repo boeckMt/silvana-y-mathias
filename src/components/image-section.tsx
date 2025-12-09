@@ -130,8 +130,8 @@ export const ImageSection = component$<ItemProps>((props) => {
                                         </div>
                                         <div class="card-content">
                                             <div class="media-content">
-                                                <p class="title is-4">{item.title}</p>
-                                                <p class="subtitle is-6">{item.subtitle}</p>
+                                                <p class="title is-6">{item.title}</p>
+                                                <p class="subtitle is-size-6">{item.subtitle}</p>
                                             </div>
                                         </div>
                                     </article>
@@ -142,7 +142,7 @@ export const ImageSection = component$<ItemProps>((props) => {
 
                         <div class="space40px"></div>
                         <div data-aos="fade-up" data-aos-easing="linear">
-                            <img src={imageEnd} class="divider has-vertically-align" alt="~~~" width={496.46} height={100}></img>
+                            <img src={imageEnd} class="divider has-vertically-align" alt="" width={496.46} height={100}></img>
                         </div>
                         <div class="space40px"></div>
                         <div class="space40px"></div>

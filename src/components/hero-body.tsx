@@ -14,9 +14,12 @@ const heroText = {
 
 export const HeroBody = component$(() => {
     const t = inlineTranslate();
+    const heroImage = 'https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0'; // `${import.meta.env.BASE_URL}assets/llamitas_2.jpg`; //  
     return (
         <>
-            <div class="hero-body"></div>
+            <div class="hero-image">
+                <img src={heroImage} width={700} height={605}></img>
+            </div>
             <section class="hero-intro pb-3 section-light regular-section has-text-centered has-vertically-aligned-content">
                 <div class="container has-text-centered">
                     <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>

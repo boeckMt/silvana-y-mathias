@@ -59,7 +59,7 @@ interface ItemProps {
 }
 export const AccommodationSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color-2" id={props.id}>
+        <section class="section-color" id={props.id}>
             <div class="container">
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <h1 class="title has-text-centered section-title">{locationText.text1}</h1>

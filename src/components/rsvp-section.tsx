@@ -65,7 +65,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
     });
     return (
         <>
-            <section class="section-color-2" id={props.id}>
+            <section class="section-color" id={props.id}>
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
@@ -103,7 +103,8 @@ export const RsvpSection = component$<ItemProps>((props) => {
 
 
                             <a href={rsvpText.mailLink}
-                                class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                                /* button btn-whatsapp mail  */
+                                class="button btn-cta" target="_blank" data-aos="zoom-in">
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                             </a>
@@ -120,7 +121,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
                     </div>
                 </div>
             </section>
-            <section class="section-color-2">
+            <section class="section-color color-3">
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
@@ -154,7 +155,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
 
 
                             <a href={songsText.mailLink}
-                                class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                                class="button btn-cta" target="_blank" data-aos="zoom-in">
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                             </a>

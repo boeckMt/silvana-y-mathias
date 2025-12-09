@@ -17,7 +17,7 @@ const timeText = {
 
 export const DateTimeSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-dark" id={props.id}>
+        <section class="section-color color-2" id={props.id}>
             <div class="container">
 
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">

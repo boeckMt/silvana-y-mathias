@@ -18,7 +18,7 @@ const introText = {
 
 export const IntroSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color-2 regular-section has-text-centered has-vertically-aligned-content"
+        <section class="section-color color-1 regular-section has-text-centered has-vertically-aligned-content"
             id={props.id}>
 
             <div data-aos="fade-up" data-aos-easing="linear">
@@ -52,7 +52,7 @@ export const IntroSection = component$<ItemProps>((props) => {
             </div>
             <span class="space40px"></span>
             <div data-aos="fade-up" data-aos-easing="linear">
-                <img src={imageEnd} class="divider has-text-centered" alt="~~~" width={496.46} height={100}></img>
+                <img src={imageEnd} class="divider has-text-centered" alt="" width={496.46} height={100}></img>
             </div>
             <span class="space40px"></span>
             <span class="space40px"></span>
