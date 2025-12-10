@@ -20,7 +20,7 @@ export const HeroBody = component$(() => {
             <div class="hero-image">
                 <img src={heroImage} width={700} height={605}></img>
             </div>
-            <section class="hero-intro pb-3 section-light regular-section has-text-centered has-vertically-aligned-content">
+            <section class="hero-intro pb-3 section-color regular-section has-text-centered has-vertically-aligned-content">
                 <div class="container has-text-centered">
                     <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
                     <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>

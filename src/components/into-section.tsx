@@ -9,6 +9,7 @@ const imageTop = 'https://lh3.googleusercontent.com/d/17dbZi2y___lcUQsCrXQ1s4Xnf
 const imageEnd = 'https://lh3.googleusercontent.com/d/1D8LXL1zwOCXCJtFCbyizmWnhDMQiLWqN=s4000?authuser=0';
 
 const introText = {
+    title: 'Willkommen',
     text1: 'Liebe Freunde und Verwandte, wir freuen uns sehr euch zu unserer Hochzeit einzuladen.',
     text2: 'Weitere Details und Informationen zur Sause findet ihr unten.',
     text3: 'Bitte bestätigt uns ob ihr kommt, über den Link',
@@ -21,6 +22,10 @@ export const IntroSection = component$<ItemProps>((props) => {
         <section class="section-color color-1 regular-section has-text-centered has-vertically-aligned-content"
             id={props.id}>
 
+            <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                <h1 class="title has-text-centered section-title">{introText.title}</h1>
+            </div>
+
             <div data-aos="fade-up" data-aos-easing="linear">
                 <img src={imageTop} class="intro-image has-text-centered" alt="intro image" width={100} height={20}></img>
             </div>
@@ -30,7 +35,7 @@ export const IntroSection = component$<ItemProps>((props) => {
                 <br />
                 {introText.text2}
                 <br />
-                {introText.text3} <a href='#rsvp'>RSVP</a> {introText.text4}
+                {introText.text3} <a href='#rsvp'><b>RSVP</b></a> {introText.text4}
             </p>
 
             <p class="bodytext mt-6" data-aos="fade-up" data-aos-easing="linear">

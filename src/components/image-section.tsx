@@ -111,7 +111,7 @@ interface ItemProps {
 }
 export const ImageSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-light regular-section is-fullheight" id={props.id}>
+        <section class="section-color regular-section is-fullheight" id={props.id}>
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column has-text-centered is-12 prolog">
