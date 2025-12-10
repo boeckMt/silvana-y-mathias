@@ -6,19 +6,28 @@ interface ItemProps {
 }
 
 export const MobileNav = component$<ItemProps>((props) => {
+    const menuSwitchClick = $((evt:Event) => {
+        const menulabel = document.getElementById('menu-switch-label') as HTMLInputElement;
+        menulabel.classList.toggle('is-active');
+    });
+
     const navClick = $((item: NavItem) => {
+        const menulabel = document.getElementById('menu-switch-label') as HTMLInputElement;
         const menu = document.getElementById('menu-switch') as HTMLInputElement;
         props.items.map(i => i.active.value = false);
         item.active.value = true;
         // close menu
         menu.checked = false;
-
+        menulabel.classList.toggle('is-active');
     });
+
     return (
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <ChangeLocale></ChangeLocale>
-                <label for="menu-switch" class="navbar-burger" role="button" aria-expanded="false">
+                <label for="menu-switch" id="menu-switch-label" onClick$={(evt) => {
+                    menuSwitchClick(evt);
+                }} class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
