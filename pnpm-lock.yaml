@@ -55,8 +55,8 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       qwik-speak:
-        specifier: ^0.23.2
-        version: 0.23.2(@builder.io/qwik@1.17.2(vite@7.1.4(@types/node@20.19.0)(less@4.4.2)(sass-embedded@1.93.3)(sass@1.93.3)(stylus@0.62.0)))
+        specifier: ^0.24.0
+        version: 0.24.0(@builder.io/qwik@1.17.2(vite@7.1.4(@types/node@20.19.0)(less@4.4.2)(sass-embedded@1.93.3)(sass@1.93.3)(stylus@0.62.0)))
       sass-embedded:
         specifier: ^1.93.2
         version: 1.93.3
@@ -2036,8 +2036,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  qwik-speak@0.23.2:
-    resolution: {integrity: sha512-jdfSO0LTUWgwwKipJSIRuP5kE7VqjZjdpbumCaZK2/Dd8Cr/3+oTOAbekv0QPTvhzvcsHBAoSOsyzm2leFfGlw==}
+  qwik-speak@0.24.0:
+    resolution: {integrity: sha512-ZYhb5ZjHmLZX40xw/pTciyHvPAR0uKQKnoyD5XEYZsIfLNsJb22m/Ct3/FuGbiJQ3o2HkgRmC+mj8sd8SjdELg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4838,7 +4838,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  qwik-speak@0.23.2(@builder.io/qwik@1.17.2(vite@7.1.4(@types/node@20.19.0)(less@4.4.2)(sass-embedded@1.93.3)(sass@1.93.3)(stylus@0.62.0))):
+  qwik-speak@0.24.0(@builder.io/qwik@1.17.2(vite@7.1.4(@types/node@20.19.0)(less@4.4.2)(sass-embedded@1.93.3)(sass@1.93.3)(stylus@0.62.0))):
     dependencies:
       '@builder.io/qwik': 1.17.2(vite@7.1.4(@types/node@20.19.0)(less@4.4.2)(sass-embedded@1.93.3)(sass@1.93.3)(stylus@0.62.0))
 
