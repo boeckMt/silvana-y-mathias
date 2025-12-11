@@ -2,8 +2,8 @@ import { component$ } from '@builder.io/qwik'
 
 const locationText = {
     text1: 'Unterkunft',
-    text2: 'Es gibt mehrere Übernachtungsmöglichkeiten:',
-    text3: 'Wir empfehlen, die Zimmer frühzeitig zu reservieren'
+    text2: 'Es gibt einige schöne Unterkünfte in der Nähe. Wir empfehlen euch das B&O Parkhotel.',
+    text3: 'Am besten reserviert ihr schon früh, damit ihr entspannt planen könnt.'
 }
 
 const Accommodation1 = {
@@ -13,7 +13,7 @@ const Accommodation1 = {
     text3Link: 'https://www.bo-parkhotel.de/zimmer-und-suiten/',
     kontakt: 'Kontakt',
     kontaktLink: 'https://www.bo-parkhotel.de/kontakt',
-    text4: 'Falls ihr euch für diese Option entscheidet, gebt frühzeitig bescheid, da das Kontingent begrenzt ist!'
+    text4: 'Falls ihr euch für diese Option entscheidet, gebt frühzeitig bescheid, da es ein Zimmer Kontingent gibt.'
 }
 
 const Accommodation2 = {
@@ -64,7 +64,13 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <h1 class="title has-text-centered section-title">{locationText.text1}</h1>
                     <p class="location is-larger has-text-centered">
-                        <strong>{locationText.text1}</strong>
+                        {locationText.text2}
+                        <br></br>
+                        {locationText.text3}
+                    </p>
+
+                    <p class="location is-larger has-text-centered">
+                        
                     </p>
                 </div>
 
@@ -73,7 +79,7 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="space40px"></div>
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <p class="location is-larger has-text-centered">
-                        <strong>{Accommodation1.text1}</strong>
+                        <strong class="is-size-5">{Accommodation1.text1}</strong>
                         <br></br>
                         {Accommodation1.text2}
                         <br></br>
@@ -90,7 +96,7 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="space40px"></div>
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <p class="location is-larger has-text-centered">
-                        <strong>{Accommodation2.text1}</strong>
+                        <strong class="is-size-5">{Accommodation2.text1}</strong>
                         <br></br>
                         {Accommodation2.text2}
                         <br></br>
@@ -106,7 +112,7 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="space40px"></div>
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <p class="location is-larger has-text-centered">
-                        <strong>{Accommodation3.text1}</strong>
+                        <strong class="is-size-5">{Accommodation3.text1}</strong>
                         <br></br>
                         {Accommodation3.text2}
                         <br></br>
@@ -123,7 +129,7 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="space40px"></div>
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <p class="location is-larger has-text-centered">
-                        <strong>{Accommodation4.text1}</strong>
+                        <strong class="is-size-5">{Accommodation4.text1}</strong>
                         <br></br>
                         {Accommodation4.text2}
                         <br></br>
@@ -140,7 +146,7 @@ export const AccommodationSection = component$<ItemProps>((props) => {
                 <div class="space40px"></div>
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <p class="location is-larger has-text-centered">
-                        <strong>{Accommodation5.text1}</strong>
+                        <strong class="is-size-5">{Accommodation5.text1}</strong>
                         <br></br>
                         {Accommodation5.text2}
                         <br></br>

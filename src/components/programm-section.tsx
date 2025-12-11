@@ -9,9 +9,9 @@ const timeText = {
     date2: 'ca. 15:00',
     timeTitle: 'KAFFEE UND KUCHEN',
     time: 'ca. 16:00',
-    timeTitle2: 'Essen',
+    timeTitle2: 'Abendessen',
     time2: '19:00 - 21:00',
-    timeTitle3: 'Party',
+    timeTitle3: 'Tanzen/Party',
     time3: '21:00 - 2:00',
 };
 
@@ -56,6 +56,17 @@ export const ProgrammSection = component$<ItemProps>((props) => {
                             {timeText.timeTitle2}
                             <br></br>
                             <strong>{timeText.time2}</strong>
+                        </h1>
+
+
+                    </div>
+
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <h1 class="date is-larger has-text-centered">
+                            {timeText.timeTitle3}
+                            <br></br>
+                            <strong>{timeText.time3}</strong>
                         </h1>
 
 

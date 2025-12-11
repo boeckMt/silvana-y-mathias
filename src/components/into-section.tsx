@@ -10,11 +10,12 @@ const imageEnd = 'https://lh3.googleusercontent.com/d/1D8LXL1zwOCXCJtFCbyizmWnhD
 
 const introText = {
     title: 'Willkommen',
-    text1: 'Liebe Freunde und Verwandte, wir freuen uns sehr euch zu unserer Hochzeit einzuladen.',
-    text2: 'Weitere Details und Informationen zur Sause findet ihr unten.',
-    text3: 'Bitte bestätigt uns ob ihr kommt, über den Link',
-    text4: 'findet ihr mehr Informationen dazu.',
-    text5: 'Da wir das Programm erst im Laufe des Jahres aktualisieren, schaut doch bitte ein paar Wochen vor der Hochzeit noch einmal hier rein :)'
+    text1: 'Liebe Freunde und Verwandte, wir freuen uns sehr, euch zu unserer Hochzeit einzuladen!',
+    text2: 'Alle wichtigen Infos zur Feier findet ihr weiter unten.',
+    text3: 'Bitte gebt uns über den',
+    text4: 'RSVP-Link',
+    text5: 'Bescheid, ob ihr dabei seid.',
+    text6: 'Das Programm wird im Laufe des Jahres ergänzt - schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)'
 };
 
 export const IntroSection = component$<ItemProps>((props) => {
@@ -35,11 +36,11 @@ export const IntroSection = component$<ItemProps>((props) => {
                 <br />
                 {introText.text2}
                 <br />
-                {introText.text3} <a href='#rsvp'><b>RSVP</b></a> {introText.text4}
+                {introText.text3} <a href='#rsvp'><b>{introText.text4}</b></a> {introText.text5}
             </p>
 
             <p class="bodytext mt-6" data-aos="fade-up" data-aos-easing="linear">
-                {introText.text5}
+                {introText.text6}
             </p>
 
             <span class="space40px"></span>
@@ -57,7 +58,7 @@ export const IntroSection = component$<ItemProps>((props) => {
             </div>
             <span class="space40px"></span>
             <div data-aos="fade-up" data-aos-easing="linear">
-                <img src={imageEnd} class="divider has-text-centered" alt="" width={496.46} height={100}></img>
+                <img src={imageEnd} class="has-text-centered" alt="" width={496.46} height={100}></img>
             </div>
             <span class="space40px"></span>
             <span class="space40px"></span>

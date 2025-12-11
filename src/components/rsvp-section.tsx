@@ -4,12 +4,18 @@ import { getItems } from '~/utils/utils';
 interface ItemProps {
     id: string;
 }
-
+const mail = '';
 const rsvpText = {
     title: 'Teilnahme bestätigen',
-    text1: `Bitte bestätigt uns ob ihr kommt entweder über WhatsApp oder E-Mail.`,
-    text2: `Bitte gebt auch Bescheid, ob ihr mit oder ohne Kinder kommt.`,
-    text3: `Und ob ihr vegetarisch oder vegan essen wollt. oder Allergien gegen bestimmte Speisen habt.`,
+    text1: `Bitte bestätigt uns per E-Mail, ob ihr an unserer Hochzeit teilnehmt.`,
+    text2: `Gebt dabei auch an, ob ihr mit oder ohne Kinder kommt`,
+    text3: `Teilt uns außerdem mit, ob ihr vegetarisch oder vegan essen möchtet oder ob es Allergien bzw. Unverträglichkeiten gibt.`,
+    text4: 'Bitte sendet uns auch zwei Songs eurer Wahl, damit für alle etwas zum Tanzen geboten ist :-)',
+
+
+
+
+
 
 
     /* groupChat: 'https://chat.whatsapp.com/<id>?mode=wwt', */
@@ -18,7 +24,7 @@ const rsvpText = {
     /* googleLink: 'https://forms.gle/<id>',
     googleLinkTitle: 'Google RSVP', */
 
-    mailLink: `mailto:<mail>?subject=[Hochzeit%20RSVP]%20SilvanaYMathias&body=I will come \n And we are 3 Persons`,
+    mailLink: `mailto:${mail}?subject=[Hochzeit%20RSVP]%20SilvanaYMathias&body=I will come \n And we are 3 Persons`,
     mailLinkTitle: 'Send E-Mail',
 
 
@@ -37,7 +43,7 @@ const songsText = {
     /* googleLink: 'https://forms.gle/<id>',
     googleLinkTitle: 'Google RSVP', */
 
-    mailLink: `mailto:<mail>?subject=[Hochzeit%20Songs]%20SilvanaYMathias&body=I like to have Song number 1 and \n Song number 2.`,
+    mailLink: `mailto:${mail}?subject=[Hochzeit%20Songs]%20SilvanaYMathias&body=I like to have Song number 1 and \n Song number 2.`,
     mailLinkTitle: 'Send E-Mail',
 
 
@@ -67,21 +73,27 @@ export const RsvpSection = component$<ItemProps>((props) => {
     });
     return (
         <>
-            <section class="section-color" id={props.id}>
+            <section class="section-color color-3" id={props.id}>
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
                             <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">{rsvpText.title}</h1>
                         </div>
                         <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-                            <p class="h2 subtitle">
+                            <p class="h2">
                                 {rsvpText.text1}
                             </p>
-                            <p class="h2 subtitle">
+                            <br></br>
+                            <p class="h2">
                                 {rsvpText.text2}
                             </p>
-                            <p class="h2 subtitle">
+                            <br></br>
+                            <p class="h2">
                                 {rsvpText.text3}
+                            </p>
+                            <br></br>
+                            <p class="h2">
+                                {rsvpText.text4}
                             </p>
 
                             {/* <a href={link1.value}
@@ -89,10 +101,11 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.groupChatTitle}
                             </a> */}
-                            <button onClick$={async () => { goToSite$(2) }} class="button btn-whatsapp" data-aos="zoom-in">
+
+                            {/* <button onClick$={async () => { goToSite$(2) }} class="button btn-whatsapp" data-aos="zoom-in">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="pr-2" width={50} height={50}></img>
                                 {rsvpText.whatsappTitle2}
-                            </button>
+                            </button> */}
 
 
 
@@ -123,7 +136,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
                     </div>
                 </div>
             </section>
-            <section class="section-color color-3">
+            {/* <section class="section-color color-3">
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
@@ -137,24 +150,10 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 {songsText.subtitle2}
                             </p>
 
-                            {/* <a href={link2.value}
-                                class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                                <i class="fab fa-whatsapp"></i>
-                                &nbsp;&nbsp;{rsvpText.groupChatTitle}
-                            </a> */}
                             <button onClick$={async () => { goToSite$(2) }} class="button btn-whatsapp" data-aos="zoom-in">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="pr-2" width={50} height={50}></img>
                                 {songsText.whatsappTitle2}
                             </button>
-
-
-                            {/* <a href={songsText.googleLink}
-                                class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                                <i class="fab fa-whatsapp"></i>
-                                &nbsp;&nbsp;{rsvpText.googleLinkTitle}
-                            </a>
-                            <div class="space40px"></div> */}
-
 
                             <a href={songsText.mailLink}
                                 class="button btn-cta" target="_blank" data-aos="zoom-in">
@@ -162,18 +161,11 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                             </a>
                             <div class="space40px"></div>
-
-                            {/* <div class="space40px"></div>
-                            <div data-aos="fade-up" data-aos-easing="linear">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="divider has-text-centered" alt="" width={60} height={60}></img>
-                            </div>
-                            <div class="space40px"></div> */}
-
                         </div>
 
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 });
