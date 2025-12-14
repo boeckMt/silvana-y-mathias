@@ -1,10 +1,51 @@
 {
   "app": {
+    "accommodation": {
+      "accoN1": {
+        "kontakt": "Contacto",
+        "text3": "Habitaciones y Suiten",
+        "text4": "Si se deciden por esta opción, hay un contingente de habitaciones bajo la palabra clave",
+        "text5": "'Hochzeit Mendoza Böck'"
+      },
+      "accoN2": {
+        "kontakt": "Contacto",
+        "text3": "Habitaciones",
+        "text4": "Distancia al lugar de la boda: Con el auto ca. 3 min, a pie ca. 15 min"
+      },
+      "accoN3": {
+        "kontakt": "Contacto",
+        "text3": "Habitaciones",
+        "text4": "Distancia al lugar de la boda: Con el auto ca. 6 min, a pie ca. 40 min"
+      },
+      "accoN4": {
+        "kontakt": "Contacto",
+        "text3": "Habitaciones",
+        "text4": "Distancia al lugar de la boda: Con el auto ca. 7 min, a pie ca. 54 min"
+      },
+      "accoN5": {
+        "kontakt": "Contacto",
+        "text4": "Distancia al lugar de la boda: Con el auto ca. 8 min, a pie ca. 58 min"
+      },
+      "and": "und",
+      "location": {
+        "text1": "Alojamiento",
+        "text2": "Hay algunos alojamientos muy agradables cerca. Asimismo, recomendamos el B&O Parkhotel, donde también se celebrará la fiesta.",
+        "text3": "Es aconsejable reservar con tiempo para que puedan organizarse con tranquilidad"
+      },
+      "maps": "Google maps"
+    },
     "count": {
       "days": "días",
       "hours": "horas",
       "minutes": "minutos",
       "seconds": "segundos"
+    },
+    "date": {
+      "calendar": "Google Calendar",
+      "date1": "Samstag",
+      "date3": "Julio 2026",
+      "time": "ca. 15:00",
+      "timeTitle": "Beginn:"
     },
     "head": {
       "home": {
@@ -15,6 +56,124 @@
     "hero": {
       "Title1": "Boda de",
       "Title3": "Sábado, 25 de julio de 2026"
+    },
+    "image": {
+      "i1": {
+        "subtitle": "Primer Trekking juntos - Graseck Kochelsee",
+        "title": "Mayo 2023"
+      },
+      "i10": {
+        "subtitle": "Segunda vez en Peru - Cumple de Silvi",
+        "title": "Febrero 2025"
+      },
+      "i11": {
+        "subtitle": "Riquísimosos jugos con Pa de Silvi",
+        "title": "Febrero 2025"
+      },
+      "i12": {
+        "subtitle": "Silvi recibe un anillo - Parque del Amor, Peru",
+        "title": "Marzo 2025"
+      },
+      "i13": {
+        "subtitle": "Biketour en el Lago Walchen",
+        "title": "Abril 2025"
+      },
+      "i14": {
+        "subtitle": "Recuerdos de Perú en casa al cocinar ",
+        "title": "Julio 2025"
+      },
+      "i15": {
+        "subtitle": "Recargar energías al sol en Sicilia",
+        "title": "Octubre 2025"
+      },
+      "i2": {
+        "subtitle": "Siguiente Trekking- Jochberg Walchensee",
+        "title": "Agosto 2023"
+      },
+      "i3": {
+        "subtitle": "Noch eine Trekking- Josefsthaler Wasserfälle",
+        "title": "Noviembre 2023"
+      },
+      "i4": {
+        "subtitle": "Carnaval Mainz",
+        "title": "Noviembre 2023"
+      },
+      "i5": {
+        "subtitle": "Mucha nieve en Municn",
+        "title": "Diciembre 2023"
+      },
+      "i6": {
+        "subtitle": "Snowboarding en la montaña de Wilder Kaiser",
+        "title": "Enero 2024"
+      },
+      "i7": {
+        "subtitle": "Primer viaje juntos en Peru - Familia de Silvi",
+        "title": "Junio 2024"
+      },
+      "i8": {
+        "subtitle": "Primer Pisco Sour en Peru - con el hermano de Silvi",
+        "title": "Junio 2024"
+      },
+      "i9": {
+        "subtitle": "Montando bici en el hermoso río Isar",
+        "title": "Setiembre 2024"
+      }
+    },
+    "intro": {
+      "text1": "„Queridos amigos y familiares, ¡estamos muy felices de invitarles a celebrar nuestra boda!",
+      "text2": "Encontrarán toda la información importante sobre la celebración más abajo",
+      "text3": "Por favor, confírmenos a través del",
+      "text4": "enlace de RSVP",
+      "text5": ", si podrán acompañarnos.",
+      "text6": "El programa se irá actualizando en el transcurso del año,",
+      "text7": "así que vuelvan a consultarlo unas semanas antes de la boda:)",
+      "title": "Bienvenidos"
+    },
+    "location": {
+      "maps": "Google Maps"
+    },
+    "nav": {
+      "accommodation": {
+        "title": "Alojamiento"
+      },
+      "date": {
+        "title": "Fecha"
+      },
+      "images": {
+        "title": "Fotos"
+      },
+      "intro": {
+        "title": "Bienvenidos"
+      },
+      "location": {
+        "title": "Cómo llegar"
+      },
+      "program": {
+        "title": "Programa"
+      },
+      "rsvp": {
+        "title": "RSVP"
+      }
+    },
+    "program": {
+      "text1": "Recepción",
+      "text2": "Café y pasteles",
+      "text3": "La cena",
+      "text4": "Baile/Fiesta",
+      "time1": "aprox. a las 15:00",
+      "time2": "aprox. a las 16:00",
+      "time3": "aprox. a las 19:00",
+      "time4": "aprox. a las 21:00"
+    },
+    "rsvp": {
+      "mailLink": "Enviar e-mail",
+      "mailbody": "Ejemplo:%0A%0AAssistiremos y llevaremos un niño%0A%0AComemos vegetariano%0A%0ACanción 1:%0A%0ACanción 2:",
+      "mailsubject": "[Hochzeit RSVP] Silvana Y Mathias",
+      "text1": "Por favor, confírmenos por correo electrónico si asistirán a nuestra boda.",
+      "text2": "Indíquennos si vendrán con o sin niños.",
+      "text3": "Y si prefieren comida vegetariana o vegana, o si tienen alergias o intolerancias.",
+      "text4": "Por favor, envíennos también dos canciones de su elección para que la pista de baile vibre :-)",
+      "title": "Confirmar asistencia"
     }
   }
 }

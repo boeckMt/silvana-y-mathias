@@ -1,20 +1,179 @@
 {
   "app": {
+    "accommodation": {
+      "accoN1": {
+        "kontakt": "Kontakt",
+        "text3": "Zimmer und Suiten",
+        "text4": "Falls ihr euch für diese Option entscheidet, es gibt ein Zimmer Kontingent unter dem Stichwort",
+        "text5": "'Hochzeit Mendoza Böck'"
+      },
+      "accoN2": {
+        "kontakt": "Kontakt",
+        "text3": "Zimmer",
+        "text4": "Entfernung zur Location: Mit dem Auto ca. 3 min, zu Fuß ca. 15 min"
+      },
+      "accoN3": {
+        "kontakt": "Kontakt",
+        "text3": "Zimmer",
+        "text4": "Entfernung zur Location: Mit dem Auto ca. 6 min, zu Fuß ca. 40 min"
+      },
+      "accoN4": {
+        "kontakt": "Kontakt",
+        "text3": "Zimmer",
+        "text4": "Entfernung zur Location: Mit dem Auto ca. 7 min, zu Fuß ca. 54 min"
+      },
+      "accoN5": {
+        "kontakt": "Kontakt",
+        "text4": "Entfernung zur Location: Mit dem Auto ca. 8 min, zu Fuß ca. 58 min"
+      },
+      "and": "und",
+      "location": {
+        "text1": "Unterkunft",
+        "text2": "Es gibt einige schöne Unterkünfte in der Nähe. Wir empfehlen euch das B&O Parkhotel, wo auch die Feier ist.",
+        "text3": "Am besten reserviert ihr schon früh, damit ihr entspannt planen könnt."
+      },
+      "maps": "Google maps"
+    },
     "count": {
       "days": "Tage",
       "hours": "Stunden",
       "minutes": "Minuten",
       "seconds": "Sekunden"
     },
+    "date": {
+      "calendar": "Google Calendar",
+      "date1": "Samstag",
+      "date3": "Juli 2026",
+      "time": "ca. 15:00",
+      "timeTitle": "Beginn:"
+    },
     "head": {
       "home": {
-        "description": "",
-        "title": ""
+        "description": "Hochzeitsseite für Silvana Y Mathias",
+        "title": "Silvana Y Mathias"
       }
     },
     "hero": {
       "Title1": "Hochzeit von",
       "Title3": "Samstag, 25 Juli 2026"
+    },
+    "image": {
+      "i1": {
+        "subtitle": "Erste gemeinsame Wanderung - Graseck Kochelsee",
+        "title": "Mai 2023"
+      },
+      "i10": {
+        "subtitle": "Zweites mal in Peru - Silvi Geburtstag",
+        "title": "Februar 2025"
+      },
+      "i11": {
+        "subtitle": "Leckere Jugo's trinken mit Silvis Pa",
+        "title": "Februar 2025"
+      },
+      "i12": {
+        "subtitle": "Silvi bekommt einen Ring - Parque del Amor, Peru",
+        "title": "März 2025"
+      },
+      "i13": {
+        "subtitle": "Fahrradtour am Walchensee",
+        "title": "April 2025"
+      },
+      "i14": {
+        "subtitle": "Erinnerungen an Peru Daheim beim Kochen",
+        "title": "Juli 2025"
+      },
+      "i15": {
+        "subtitle": "Wärme tanken in Sizilien",
+        "title": "Oktober 2025"
+      },
+      "i2": {
+        "subtitle": "Nächste Wanderung - Jochberg Walchensee",
+        "title": "August 2023"
+      },
+      "i3": {
+        "subtitle": "Noch eine Wanderung - Josefsthaler Wasserfälle",
+        "title": "November 2023"
+      },
+      "i4": {
+        "subtitle": "Karneval Mainz",
+        "title": "November 2023"
+      },
+      "i5": {
+        "subtitle": "Viel Schnee in München",
+        "title": "Dezember 2023"
+      },
+      "i6": {
+        "subtitle": "Snowboarden am Wilder Kaiser",
+        "title": "Januar 2024"
+      },
+      "i7": {
+        "subtitle": "Erstes mal gemeinsam in Peru - Silvi Familie",
+        "title": "Juni 2024"
+      },
+      "i8": {
+        "subtitle": "Erstes mal Pisco in Peru - Silvi Bruder",
+        "title": "Juni 2024"
+      },
+      "i9": {
+        "subtitle": "Fahrrad fahren an der schönen Isar",
+        "title": "September 2024"
+      }
+    },
+    "intro": {
+      "text1": "Liebe Freunde und Verwandte, wir freuen uns sehr, euch zu unserer Hochzeit einzuladen!",
+      "text2": "Alle wichtigen Infos zur Feier findet ihr weiter unten.",
+      "text3": "Bitte gebt uns über den",
+      "text4": "RSVP-Link",
+      "text5": "Bescheid, ob ihr dabei seid.",
+      "text6": "Das Programm wird im Laufe des Jahres ergänzt,",
+      "text7": "schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)",
+      "title": "Willkommen"
+    },
+    "location": {
+      "maps": "Google Maps"
+    },
+    "nav": {
+      "accommodation": {
+        "title": "Unterkunft"
+      },
+      "date": {
+        "title": "Datum"
+      },
+      "images": {
+        "title": "Bilder"
+      },
+      "intro": {
+        "title": "Willkommen"
+      },
+      "location": {
+        "title": "Anreise"
+      },
+      "program": {
+        "title": "Programm"
+      },
+      "rsvp": {
+        "title": "RSVP"
+      }
+    },
+    "program": {
+      "text1": "Empfang",
+      "text2": "Kaffee und Kuchen",
+      "text3": "Abendessen",
+      "text4": "Tanzen/Party",
+      "time1": "ca. 15:00",
+      "time2": "ca. 16:00",
+      "time3": "ca. 19:00",
+      "time4": "ca. 21:00"
+    },
+    "rsvp": {
+      "mailLink": "E-Mail Senden",
+      "mailbody": "Beispiel: %0A%0A Wir kommen und bringen ein Kind mit %0A%0A Wir essen vegetarisch %0A%0A Song 1: %0A%0A Song 2:",
+      "mailsubject": "[Hochzeit RSVP] Silvana Y Mathias",
+      "text1": "Bitte bestätigt uns per E-Mail, ob ihr an unserer Hochzeit teilnehmt.",
+      "text2": "Gebt dabei auch an, ob ihr mit oder ohne Kinder kommt",
+      "text3": "Teilt uns außerdem mit, ob ihr vegetarisch oder vegan essen möchtet oder ob es Allergien bzw. Unverträglichkeiten gibt.",
+      "text4": "Bitte sendet uns auch zwei Songs eurer Wahl, damit die Tanzfläche bebt :-)",
+      "title": "Teilnahme bestätigen"
     }
   }
 }
