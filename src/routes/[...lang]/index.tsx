@@ -67,8 +67,9 @@ export default component$(() => {
         <HeroFoot items={navItems}></HeroFoot>
         <IntroSection id={ids.intro}></IntroSection>
         <DateTimeSection id={ids.date}></DateTimeSection>
-        <AccommodationSection id={ids.accommodation}></AccommodationSection>
         <LocationSection id={ids.location}></LocationSection>
+        <AccommodationSection id={ids.accommodation}></AccommodationSection>
+        
         <ProgrammSection id={ids.program}></ProgrammSection>
         <RsvpSection id={ids.rsvp}></RsvpSection>
         <ImageSection id={ids.images}></ImageSection>

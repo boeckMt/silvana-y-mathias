@@ -4,7 +4,7 @@ import { getItems } from '~/utils/utils';
 interface ItemProps {
     id: string;
 }
-const mail = '';
+const mailBody = `Beispiel: \n Wir kommen und bringen ein Kind mit \n Einer von uns ist vegetarisch \n Song 1: `;
 const rsvpText = {
     title: 'Teilnahme bestätigen',
     text1: `Bitte bestätigt uns per E-Mail, ob ihr an unserer Hochzeit teilnehmt.`,
@@ -13,41 +13,17 @@ const rsvpText = {
     text4: 'Bitte sendet uns auch zwei Songs eurer Wahl, damit für alle etwas zum Tanzen geboten ist :-)',
 
 
-
-
-
-
-
     /* groupChat: 'https://chat.whatsapp.com/<id>?mode=wwt', */
     /* groupChatTitle: 'WhatsApp', */
 
     /* googleLink: 'https://forms.gle/<id>',
     googleLinkTitle: 'Google RSVP', */
 
-    mailLink: `mailto:${mail}?subject=[Hochzeit%20RSVP]%20SilvanaYMathias&body=I will come \n And we are 3 Persons`,
+    mailLink: `mailto:${mail}?subject=[Hochzeit%20RSVP]%20SilvanaYMathias&body=${mailBody}`,
     mailLinkTitle: 'Send E-Mail',
 
 
     href1: `https://api.whatsapp.com/send?phone=<number>&text=<text>&source=<source>&data=<data>`,
-    whatsappTitle2: `WhatsApp`
-};
-
-const songsText = {
-    title: 'Songs senden',
-    subtitle: `Bitte sendet uns auch zwei Songs eurer Wahl, damit für alle etwas zum Tanzen geboten ist :-)`,
-    subtitle2: `Dies könnt ihr uns auch gern per WhatsApp oder E-Mail schicken.`,
-
-    /* groupChat: 'https://chat.whatsapp.com/<id>?mode=wwt', */
-    /*  groupChatTitle: 'WhatsApp', */
-
-    /* googleLink: 'https://forms.gle/<id>',
-    googleLinkTitle: 'Google RSVP', */
-
-    mailLink: `mailto:${mail}?subject=[Hochzeit%20Songs]%20SilvanaYMathias&body=I like to have Song number 1 and \n Song number 2.`,
-    mailLinkTitle: 'Send E-Mail',
-
-
-    href1: 'https://api.whatsapp.com/send?phone=<number>&text=<text>&source=<source>&data=<data>',
     whatsappTitle2: `WhatsApp`
 };
 
@@ -59,7 +35,6 @@ export const RsvpSection = component$<ItemProps>((props) => {
 
     useTask$(() => {
         link1.value = rsvpText.href1.replace('<number>', item1);
-        link2.value = songsText.href1.replace('<number>', item2);
     });
 
     const goToSite$ = $((v: 1 | 2) => {
@@ -73,7 +48,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
     });
     return (
         <>
-            <section class="section-color color-3" id={props.id}>
+            <section class="section-color bg-color-3" id={props.id}>
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
@@ -113,8 +88,7 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.googleLinkTitle}
-                            </a>
-                            <div class="space40px"></div> */}
+                            </a>*/}
 
 
                             <a href={rsvpText.mailLink}
@@ -123,20 +97,19 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                             </a>
-                            <div class="space40px"></div>
 
-                            {/* <div class="space40px"></div>
+
+                            {/*
                             <div data-aos="fade-up" data-aos-easing="linear">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width={60} height={60}></img>
-                            </div>
-                            <div class="space40px"></div> */}
+                            </div> */}
 
                         </div>
 
                     </div>
                 </div>
             </section>
-            {/* <section class="section-color color-3">
+            {/* <section class="section-color bg-scolor-3">
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-12 prolog">
@@ -160,7 +133,6 @@ export const RsvpSection = component$<ItemProps>((props) => {
                                 <i class="fab fa-whatsapp"></i>
                                 &nbsp;&nbsp;{rsvpText.mailLinkTitle}
                             </a>
-                            <div class="space40px"></div>
                         </div>
 
                     </div>

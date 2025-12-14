@@ -26,19 +26,19 @@ const sectionTitle = 'Ein paar Bilder zu uns';
 const images: IimageCard[] = [
     {
         title: 'Mai 2023',
-        subtitle: 'Unsere erste gemainsame Wanderung - Graseck Kochelsee',
+        subtitle: 'Erste gemainsame Wanderung - Graseck Kochelsee',
         src: 'https://lh3.googleusercontent.com/d/1mSqjhF95Wqs0gas4w9xxyIjScUtvCKOS=s4000?authuser=0',
         // src: 'IMG-20230519-WA0048.jpg' // <Img20230519Wa0048></Img20230519Wa0048>
     },
     {
         title: 'August 2023',
-        subtitle: '... Wanderung - Jochberg Walchensee',
+        subtitle: 'Nächste Wanderung - Jochberg Walchensee',
         src: 'https://lh3.googleusercontent.com/d/1cOARtL-Le9Gyeeko71VUiv1-JGS-vxXZ=s4000?authuser=0',
         // src: 'IMG-20230813-WA0058.jpg'
     },
     {
         title: 'November 2023',
-        subtitle: 'Wanderung Josefsthaler Wasserfälle',
+        subtitle: 'Noch eine Wanderung - Josefsthaler Wasserfälle',
         src: 'https://lh3.googleusercontent.com/d/1WS9Efk_kMSDi3eIM5U-GjdQ0QQYzS2sp=s4000?authuser=0',
         // src: 'IMG-20231101-WA0130.jpg'
     },
@@ -56,21 +56,25 @@ const images: IimageCard[] = [
     },
     {
         title: 'Jannuar 2024',
-        subtitle: 'Snowboarden Wilder Kaiser',
+        subtitle: 'Snowboarden am Wilder Kaiser',
         src: 'https://lh3.googleusercontent.com/d/1rYZ7S5S6z31gFePpnNg3oUzOSTqUBWXU=s4000?authuser=0',
         // src: 'IMG-20240104-WA0020.jpg'
     },
     {
-        title: 'Mai 2024',
+        title: 'Juni 2024',
         subtitle: 'Erstes mal gemeinsam in Peru - Silvi Familie',
         src: 'https://lh3.googleusercontent.com/d/1hVy0ZHczMtpIPjHKuPYPJnfr80uOWhwl=s4000?authuser=0',
         // src: '20240512_170041.jpg'
     },
     {
-        title: 'August 2024',
-        subtitle: '... ',
+        title: 'Juni 2024',
+        subtitle: 'Erstes mal Pisco in Peru - Silvi Bruder',
+        src: 'https://lh3.googleusercontent.com/d/1hVy0ZHczMtpIPjHKuPYPJnfr80uOWhwl=s4000?authuser=0',
+    },
+    {
+        title: 'September 2024',
+        subtitle: 'Fahrrad fahren an der schönen Isar',
         src: 'https://lh3.googleusercontent.com/d/1nwud_2H0AMFjwkLiHMJRklck_11asGWo=s4000?authuser=0',
-        // src: 'IMG-20240816-WA0023.jpg'
     },
     {
         title: 'Februar 2025',
@@ -80,21 +84,28 @@ const images: IimageCard[] = [
     },
     {
         title: 'Februar 2025',
-        subtitle: `Leckere Jugo's mit Silvis Pa`,
+        subtitle: `Leckere Jugo's trinken mit Silvis Pa`,
         src: 'https://lh3.googleusercontent.com/d/1_GdH_ojsnaFcDQbUle8N7h3TUpttxIKM=s4000?authuser=0',
         // src: 'IMG-20250221-WA0031.jpg'
     },
     {
         title: 'März 2025',
-        subtitle: 'Silvi bekommt einen Ring in Peru',
-        src: 'https://lh3.googleusercontent.com/d/1_avnMruKAUll0sCovLZraPuG7iXISSrZ=s4000?authuser=0',
-        // src: 'IMG-20250302-WA0062.jpg'
+        subtitle: 'Silvi bekommt einen Ring - Parque del Amor, Peru',
     },
     {
-        title: 'Juli 2025<',
+        title: 'April 2025',
+        subtitle: 'Fahrradtour am Walchensee',
+        src: 'https://lh3.googleusercontent.com/d/18LHHzGAgh7M7YTp_ciRzi1pS1mJhu2e_=s4000?authuser=0',
+    },
+    {
+        title: 'Juli 2025',
         subtitle: 'Erinnerungen an Peru Daheim beim Kochen',
         src: 'https://lh3.googleusercontent.com/d/18LHHzGAgh7M7YTp_ciRzi1pS1mJhu2e_=s4000?authuser=0',
-        // src: 'IMG-20250726-WA0029.jpg'
+    },
+    {
+        title: 'Oktober 2025',
+        subtitle: 'Wärme tanken in Sizilien',
+        src: 'https://lh3.googleusercontent.com/d/18LHHzGAgh7M7YTp_ciRzi1pS1mJhu2e_=s4000?authuser=0',
     }
 ];
 
@@ -111,7 +122,7 @@ interface ItemProps {
 }
 export const ImageSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color regular-section is-fullheight" id={props.id}>
+        <section class="section-color last regular-section is-fullheight" id={props.id}>
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column has-text-centered is-12 prolog">
@@ -125,7 +136,7 @@ export const ImageSection = component$<ItemProps>((props) => {
                                     <article class="card" data-aos="fade-up" data-aos-easing="linear">
                                         <div class="card-image">
                                             <figure class="image is-4by3">
-                                                <img src={item.src} width={533} height={400} crossOrigin="anonymous" />
+                                                <img src={item.src} loading="lazy" width={533} height={400} crossOrigin="anonymous" />
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -139,13 +150,13 @@ export const ImageSection = component$<ItemProps>((props) => {
                             ))}
                         </div>
 
+                    </div>
 
-                        <div class="space40px"></div>
-                        <div data-aos="fade-up" data-aos-easing="linear">
-                            <img src={imageEnd} class="divider has-vertically-align" alt="" width={496.46} height={100}></img>
+                    <div class="column has-text-centered is-12 prolog mt-5">
+
+                        <div>
+                            <img src={imageEnd} loading="lazy" class="has-vertically-align" alt="" width={496.46} height={100}></img>
                         </div>
-                        <div class="space40px"></div>
-                        <div class="space40px"></div>
                     </div>
                 </div>
             </div>

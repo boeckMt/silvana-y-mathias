@@ -17,7 +17,7 @@ const timeText = {
 
 export const DateTimeSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color color-2" id={props.id}>
+        <section class="section-color bg-color-2" id={props.id}>
             <div class="container">
 
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
@@ -44,7 +44,6 @@ export const DateTimeSection = component$<ItemProps>((props) => {
                     </div>
                 </div>
 
-            <div class="space40px"></div>
             <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
                 <a href={timeText.calendarHref} target="_blank" class="button has-tooltip btn-cta"
                     data-tooltip="Add to Calendar" data-aos="zoom-in">

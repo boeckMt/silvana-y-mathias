@@ -22,7 +22,7 @@ interface ItemProps {
 }
 export const LocationSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color color-1" id={props.id}>
+        <section class="section-color" id={props.id}>
             <div class="container">
                 <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                     <h1 class="title has-text-centered section-title">Anreise</h1>
@@ -38,13 +38,14 @@ export const LocationSection = component$<ItemProps>((props) => {
 
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe class="gmap_iframe" 
-                           /** @ts-expect-error - referrerpolicy is not supported everywhere */
-                           src={maps.frameSrc} width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        <iframe class="gmap_iframe"
+                            /** @ts-expect-error - referrerpolicy is not supported everywhere */
+                            src={maps.frameSrc} width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
-                <div class="space40px"></div>
+
+
                 <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
                     <a href={maps.href}
                         class="button btn-cta" target="_blank" data-aos="zoom-in">

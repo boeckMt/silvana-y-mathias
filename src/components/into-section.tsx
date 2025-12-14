@@ -15,55 +15,52 @@ const introText = {
     text3: 'Bitte gebt uns über den',
     text4: 'RSVP-Link',
     text5: 'Bescheid, ob ihr dabei seid.',
-    text6: 'Das Programm wird im Laufe des Jahres ergänzt - schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)'
+    text6: 'Das Programm wird im Laufe des Jahres ergänzt,',
+    text7: 'schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)'
 };
 
 export const IntroSection = component$<ItemProps>((props) => {
     return (
-        <section class="section-color color-1 regular-section has-text-centered has-vertically-aligned-content"
+        <section class="section-color first bg-color-1 regular-section has-text-centered has-vertically-aligned-content"
             id={props.id}>
+
+            <div data-aos="fade-up" data-aos-easing="linear">
+                <img src={imageTop} class="intro-image has-text-centered" alt="intro image" width={496.46} height={200}></img>
+            </div>
+
 
             <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                 <h1 class="title has-text-centered section-title">{introText.title}</h1>
             </div>
 
-            <div data-aos="fade-up" data-aos-easing="linear">
-                <img src={imageTop} class="intro-image has-text-centered" alt="intro image" width={100} height={20}></img>
-            </div>
+
 
             <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
                 {introText.text1}
                 <br />
                 {introText.text2}
                 <br />
-                {introText.text3} <a href='#rsvp'><b>{introText.text4}</b></a> {introText.text5}
+                {introText.text3} <a href='#rsvp' class="link-in-text"><b>{introText.text4}</b></a> {introText.text5}
             </p>
 
             <p class="bodytext mt-6" data-aos="fade-up" data-aos-easing="linear">
                 {introText.text6}
             </p>
 
-            <span class="space40px"></span>
-            <span class="space40px"></span>
+            <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+                {introText.text7}
+            </p>
 
             <div data-aos="fade-up" data-aos-easing="linear">
                 <div class="name-big">
                     Silvana
                 </div>
-                <div class="ampersand">Y</div>
+                <div class="ampersand">y</div>
                 <div class="name-big">
                     Mathias
                 </div>
 
             </div>
-            <span class="space40px"></span>
-            <div data-aos="fade-up" data-aos-easing="linear">
-                <img src={imageEnd} class="has-text-centered" alt="" width={496.46} height={100}></img>
-            </div>
-            <span class="space40px"></span>
-            <span class="space40px"></span>
-
-            {/* <NotifyButton></NotifyButton> */}
         </section>
     )
 });
