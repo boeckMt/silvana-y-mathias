@@ -1,14 +1,12 @@
 import { component$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
-import { useSpeakLocale, useSpeakConfig, useDisplayName, inlineTranslate, localizePath } from 'qwik-speak';
+import { useSpeakLocale, useSpeakConfig, useDisplayName, localizePath } from 'qwik-speak';
 
 function getLangDis(value: string) {
     return value.split('-')[0];
 }
 
 export const ChangeLocale = component$(() => {
-    const t = inlineTranslate();
-
     const pathname = useLocation().url.pathname;
 
     const locale = useSpeakLocale();

@@ -4,17 +4,20 @@ import { component$ } from '@builder.io/qwik'
 import { Countdown } from './countdown';
 import { inlineTranslate } from 'qwik-speak';
 
-const heroText = {
-    title1: 'Hochzeit von',
-    title2part1: 'Silvana',
-    title2part2: 'y',
-    title2part3: 'Mathias',
-    title3: 'Samstag, 25 Juli 2026'
-}
 
 export const HeroBody = component$(() => {
     const t = inlineTranslate();
-    const heroImage = 'https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0'; // `${import.meta.env.BASE_URL}assets/llamitas_2.jpg`; //  
+
+    const heroText = {
+        title1: t('app.hero.Title1@@Hochzeit von'),
+        title2part1: 'Silvana',
+        title2part2: 'y',
+        title2part3: 'Mathias',
+        title3: t('app.hero.Title3@@Samstag, 25 Juli 2026')
+    }
+
+
+    const heroImage = `${import.meta.env.BASE_URL}assets/llamitas_2.jpg`; // 'https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0'; // 
     return (
         <>
             <div class="hero-image">
@@ -22,10 +25,10 @@ export const HeroBody = component$(() => {
             </div>
             <section class="hero-intro pb-3 section-color regular-section has-text-centered has-vertically-aligned-content">
                 <div class="container has-text-centered">
-                    <h1 class="subtitle">{t('app.hero.Title1@@{{heroText.title1}}')}</h1>
+                    <h1 class="subtitle">{heroText.title1}</h1>
                     <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
                     <h4 class="subtitle hero-body-title">
-                        {t('app.hero.Title3@@{{heroText.title3}}')}
+                        {heroText.title3}
                     </h4>
                 </div>
 

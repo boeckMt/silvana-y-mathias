@@ -9,16 +9,16 @@ import { ImageSection } from "~/components/image-section";
 import { IntroSection } from "~/components/into-section";
 import { LocationSection } from "~/components/location-section";
 import { MobileNav } from "~/components/mobile-nav";
-import { ProgrammSection } from "~/components/programm-section";
+import { ProgramSection } from "~/components/program-section";
 import { RsvpSection } from "~/components/rsvp-section";
 import { DateTimeSection } from "~/components/date-time-section";
-import { inlineTranslate, useSpeakLocale } from "qwik-speak";
+import { inlineTranslate } from "qwik-speak";
 
 import { config } from '../../speak-config';
 
 
 export default component$(() => {
-  const locale = useSpeakLocale();
+  const t = inlineTranslate();
 
   const ids = {
     home: 'start',
@@ -40,14 +40,14 @@ export default component$(() => {
   const activeImages = useSignal(false);
 
   const navItems: NavItem[] = [
-    { href: `#${ids.intro}`, title: 'Willkommen', active: activeIntro },
-    { href: `#${ids.date}`, title: 'Datum', active: activeDate },
-    { href: `#${ids.location}`, title: 'Anreise', active: activeLocation },
-    { href: `#${ids.accommodation}`, title: 'Unterkunft', active: activeAccommodation },
+    { href: `#${ids.intro}`, title: t('app.nav.intro.title@@Willkommen'), active: activeIntro },
+    { href: `#${ids.date}`, title: t('app.nav.date.title@@Datum'), active: activeDate },
+    { href: `#${ids.location}`, title: t('app.nav.location.title@@Anreise'), active: activeLocation },
+    { href: `#${ids.accommodation}`, title: t('app.nav.accommodation.title@@Unterkunft'), active: activeAccommodation },
 
-    { href: `#${ids.program}`, title: 'Programm', active: activeProgram },
-    { href: `#${ids.rsvp}`, title: 'RSVP', active: activeRsvp },
-    { href: `#${ids.images}`, title: 'Bilder', active: activeImages },
+    { href: `#${ids.program}`, title: t('app.nav.program.title@@Programm'), active: activeProgram },
+    { href: `#${ids.rsvp}`, title: t('app.nav.rsvp.title@@RSVP'), active: activeRsvp },
+    { href: `#${ids.images}`, title: t('app.nav.images.title@@Bilder'), active: activeImages },
   ];
 
 
@@ -69,8 +69,8 @@ export default component$(() => {
         <DateTimeSection id={ids.date}></DateTimeSection>
         <LocationSection id={ids.location}></LocationSection>
         <AccommodationSection id={ids.accommodation}></AccommodationSection>
-        
-        <ProgrammSection id={ids.program}></ProgrammSection>
+
+        <ProgramSection id={ids.program}></ProgramSection>
         <RsvpSection id={ids.rsvp}></RsvpSection>
         <ImageSection id={ids.images}></ImageSection>
       </div>
@@ -85,7 +85,7 @@ export const head: DocumentHead = () => {
 
   return {
     // Welcome to Silvi y Mat
-    title: t('app.head.home.title', { name: 'Qwik Speak' }),
+    title: t('app.head.home.title', { name: 'Sylvana y Mathias' }),
     meta: [
       {
         name: 'description',

@@ -1,25 +1,31 @@
 import { component$ } from '@builder.io/qwik'
+import { inlineTranslate } from 'qwik-speak';
 
 interface ItemProps {
     id: string;
 }
 
-const timeText = {
-    date1: 'Empfang',
-    date2: 'ca. 15:00',
-    timeTitle: 'KAFFEE UND KUCHEN',
-    time: 'ca. 16:00',
-    timeTitle2: 'Abendessen',
-    time2: 'ca. 19:00 - 21:00',
-    timeTitle3: 'Tanzen/Party',
-    time3: 'ca. 21:00 - 1:00',
-};
+
 
 
 // const imageEnd =  `${import.meta.env.BASE_URL}assets/blumen_schnitt.png`;
 
 
-export const ProgrammSection = component$<ItemProps>((props) => {
+export const ProgramSection = component$<ItemProps>((props) => {
+    const t = inlineTranslate();
+
+    const programText = {
+        title: t('app.program.title@@Programm'),
+        text1: t('app.program.text1@@Empfang'),
+        time1: t('app.program.time1@@ca. 15:00'),
+        text2: t('app.program.text2@@Kaffee und Kuchen'),
+        time2: t('app.program.time2@@ca. 16:00'),
+        text3: t('app.program.text3@@Abendessen'),
+        time3: t('app.program.time3@@ca. 19:00'),
+        text4: t('app.program.text4@@Tanzen/Party'),
+        time4: t('app.program.time4@@ca. 21:00')
+    };
+
     return (
         <>
 
@@ -27,7 +33,7 @@ export const ProgrammSection = component$<ItemProps>((props) => {
                 <div class="container">
 
                     <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-                        <h1 class="title has-text-centered section-title">Programm</h1>
+                        <h1 class="title has-text-centered section-title">{programText.title}</h1>
                     </div>
                     <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
                         <div class="column is-4 has-vertically-aligned-content">
@@ -39,18 +45,18 @@ export const ProgrammSection = component$<ItemProps>((props) => {
                         </div> */}
 
                             <div class="date is-larger has-text-centered">
-                                {timeText.date1}
+                                {programText.text1}
                                 <br></br>
-                                <strong>{timeText.date2}</strong>
+                                <strong>{programText.time1}</strong>
                             </div>
 
                         </div>
                         <div class="column is-4 has-vertically-aligned-content">
 
                             <div class="date is-larger has-text-centered">
-                                {timeText.timeTitle}
+                                {programText.text2}
                                 <br></br>
-                                <strong>{timeText.time}</strong>
+                                <strong>{programText.time2}</strong>
                             </div>
 
                         </div>
@@ -58,9 +64,9 @@ export const ProgrammSection = component$<ItemProps>((props) => {
                         <div class="column is-4 has-vertically-aligned-content">
 
                             <h1 class="date is-larger has-text-centered">
-                                {timeText.timeTitle2}
+                                {programText.text3}
                                 <br></br>
-                                <strong>{timeText.time2}</strong>
+                                <strong>{programText.time3}</strong>
                             </h1>
 
 
@@ -69,9 +75,9 @@ export const ProgrammSection = component$<ItemProps>((props) => {
                         <div class="column is-4 has-vertically-aligned-content">
 
                             <h1 class="date is-larger has-text-centered">
-                                {timeText.timeTitle3}
+                                {programText.text4}
                                 <br></br>
-                                <strong>{timeText.time3}</strong>
+                                <strong>{programText.time4}</strong>
                             </h1>
 
 

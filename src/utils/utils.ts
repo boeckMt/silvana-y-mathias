@@ -6,11 +6,3 @@ export const setReplCorsHeaders = (headers: Headers) => {
     headers.set('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
     headers.set('Cross-Origin-Embedder-Policy', 'unsafe-none');
 };
-
-export const getItems = () => {
-    const items = ['', ''];
-    return {
-        item1: atob(items[0]),
-        item2: atob(items[1]),
-    }
-}

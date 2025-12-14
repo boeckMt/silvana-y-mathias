@@ -1,25 +1,27 @@
 import { component$ } from '@builder.io/qwik'
-// import { NotifyButton } from './notify/notify';
+import { inlineTranslate } from 'qwik-speak';
 
 interface ItemProps {
     id: string;
 }
 
-const imageTop = 'https://lh3.googleusercontent.com/d/17dbZi2y___lcUQsCrXQ1s4Xnf6RyETKS=s4000?authuser=0';
-const imageEnd = 'https://lh3.googleusercontent.com/d/1D8LXL1zwOCXCJtFCbyizmWnhDMQiLWqN=s4000?authuser=0';
+const imageTop = `${import.meta.env.BASE_URL}assets/blumen_oben.png`; //'https://lh3.googleusercontent.com/d/17dbZi2y___lcUQsCrXQ1s4Xnf6RyETKS=s4000?authuser=0';
 
-const introText = {
-    title: 'Willkommen',
-    text1: 'Liebe Freunde und Verwandte, wir freuen uns sehr, euch zu unserer Hochzeit einzuladen!',
-    text2: 'Alle wichtigen Infos zur Feier findet ihr weiter unten.',
-    text3: 'Bitte gebt uns über den',
-    text4: 'RSVP-Link',
-    text5: 'Bescheid, ob ihr dabei seid.',
-    text6: 'Das Programm wird im Laufe des Jahres ergänzt,',
-    text7: 'schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)'
-};
 
 export const IntroSection = component$<ItemProps>((props) => {
+    const t = inlineTranslate();
+
+    const introText = {
+        title: t('app.intro.title@@Willkommen'),
+        text1: t('app.intro.text1@@Liebe Freunde und Verwandte, wir freuen uns sehr, euch zu unserer Hochzeit einzuladen!'),
+        text2: t('app.intro.text2@@Alle wichtigen Infos zur Feier findet ihr weiter unten.'),
+        text3: t('app.intro.text3@@Bitte gebt uns über den'),
+        text4: t('app.intro.text4@@RSVP-Link'),
+        text5: t('app.intro.text5@@Bescheid, ob ihr dabei seid.'),
+        text6: t('app.intro.text6@@Das Programm wird im Laufe des Jahres ergänzt,'),
+        text7: t('app.intro.text7@@schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)')
+    };
+
     return (
         <section class="section-color first bg-color-1 regular-section has-text-centered has-vertically-aligned-content"
             id={props.id}>
