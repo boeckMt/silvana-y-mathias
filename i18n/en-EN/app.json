@@ -45,7 +45,8 @@
       "date1": "Saturday,",
       "date3": "July 2026",
       "time": "around 3 PM",
-      "timeTitle": "starts:"
+      "timeTitle": "starts:",
+      "title": "Date"
     },
     "head": {
       "home": {
@@ -117,7 +118,8 @@
       "i9": {
         "subtitle": "Cycling along the beautiful Isar River",
         "title": "September 2024"
-      }
+      },
+      "title": "A few pictures about us"
     },
     "intro": {
       "text1": "Dear friends and family, we are delighted to invite you to our wedding!",
@@ -130,7 +132,8 @@
       "title": "Welcome"
     },
     "location": {
-      "maps": "Google Maps"
+      "maps": "Google Maps",
+      "title": "Arrival"
     },
     "nav": {
       "accommodation": {
@@ -163,7 +166,8 @@
       "time1": "around 3:00 pm",
       "time2": "around 4:00 pm",
       "time3": "around 7:00 pm",
-      "time4": "around 9:00 pm"
+      "time4": "around 9:00 pm",
+      "title": "Program"
     },
     "rsvp": {
       "mailLink": "Send E-Mail",

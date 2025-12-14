@@ -45,7 +45,8 @@
       "date1": "Samstag",
       "date3": "Juli 2026",
       "time": "ca. 15:00",
-      "timeTitle": "Beginn:"
+      "timeTitle": "Beginn:",
+      "title": "Datum"
     },
     "head": {
       "home": {
@@ -117,7 +118,8 @@
       "i9": {
         "subtitle": "Fahrrad fahren an der schönen Isar",
         "title": "September 2024"
-      }
+      },
+      "title": "Ein paar Bilder zu uns"
     },
     "intro": {
       "text1": "Liebe Freunde und Verwandte, wir freuen uns sehr, euch zu unserer Hochzeit einzuladen!",
@@ -130,7 +132,8 @@
       "title": "Willkommen"
     },
     "location": {
-      "maps": "Google Maps"
+      "maps": "Google Maps",
+      "title": "Anreise"
     },
     "nav": {
       "accommodation": {
@@ -163,7 +166,8 @@
       "time1": "ca. 15:00",
       "time2": "ca. 16:00",
       "time3": "ca. 19:00",
-      "time4": "ca. 21:00"
+      "time4": "ca. 21:00",
+      "title": "Programm"
     },
     "rsvp": {
       "mailLink": "E-Mail Senden",

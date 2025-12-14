@@ -45,7 +45,8 @@
       "date1": "Samstag",
       "date3": "Julio 2026",
       "time": "ca. 15:00",
-      "timeTitle": "Beginn:"
+      "timeTitle": "Inicio de:",
+      "title": "Fecha"
     },
     "head": {
       "home": {
@@ -117,7 +118,8 @@
       "i9": {
         "subtitle": "Montando bici en el hermoso río Isar",
         "title": "Setiembre 2024"
-      }
+      },
+      "title": "Unas fotos sobre nosotros"
     },
     "intro": {
       "text1": "„Queridos amigos y familiares, ¡estamos muy felices de invitarles a celebrar nuestra boda!",
@@ -130,7 +132,8 @@
       "title": "Bienvenidos"
     },
     "location": {
-      "maps": "Google Maps"
+      "maps": "Google Maps",
+      "title": "Cómo llegar"
     },
     "nav": {
       "accommodation": {
@@ -163,7 +166,8 @@
       "time1": "aprox. a las 15:00",
       "time2": "aprox. a las 16:00",
       "time3": "aprox. a las 19:00",
-      "time4": "aprox. a las 21:00"
+      "time4": "aprox. a las 21:00",
+      "title": "El Programa"
     },
     "rsvp": {
       "mailLink": "Enviar e-mail",
