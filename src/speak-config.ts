@@ -2,7 +2,7 @@ import type { SpeakConfig } from 'qwik-speak';
 
 export const config: SpeakConfig = {
     defaultLocale: { lang: 'de-DE', currency: 'EUR', timeZone: 'Europe/Rome' },
-    basePath: '/silvana-y-mathias',
+    basePath: '/silvana-y-mathias/',
     supportedLocales: [
         { lang: 'de-DE', currency: 'EUR', timeZone: 'Europe/Rome' },
         { lang: 'es-ES', currency: 'SOL', timeZone: 'America/Los_Angeles' },

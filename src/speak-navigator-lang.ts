@@ -35,7 +35,7 @@ export function trySetNavigatorLang() {
 
     try {
         const base = normalizedBase(config.basePath); // e.g. '/silvana-y-mathias' or ''
-        const defaultPath = `${base}/`; // e.g. '/silvana-y-mathias/pathname' or '/pathname'
+        const defaultPath = `${base}`; // e.g. '/silvana-y-mathias/pathname' or '/pathname'
         const { pathname, search, hash } = window.location;
 
         // Build list of supported language tags (strings): ['de-DE','es-ES',...]
@@ -85,8 +85,8 @@ export function trySetNavigatorLang() {
 }
 
 export function getPathExplicit(pathname: string) {
-    if (pathname === `${config.basePath}/`) {
-        return `${config.basePath}/${config.defaultLocale.lang}/`
+    if (pathname === `${config.basePath}`) {
+        return `${config.basePath}${config.defaultLocale.lang}/`
     } else {
         return pathname;
     }
