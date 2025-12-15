@@ -39,7 +39,8 @@ export function trySetNavigatorLang() {
         const { pathname, search, hash } = window.location;
 
         // Build list of supported language tags (strings): ['de-DE','es-ES',...]
-        const supportedLangs = (config.supportedLocales || []).map((s) => s.lang);
+        const locales = config.supportedLocales.filter(i => i.lang !== config.defaultLocale.lang);
+        const supportedLangs = (locales || []).map((s) => s.lang);
 
         // Regex to detect a locale segment immediately after defaultPath
         // example match: ^/silvana-y-mathias/pathname/([^/]+)
@@ -73,7 +74,8 @@ export function trySetNavigatorLang() {
 
         // 2) No explicit preference -> pick from navigator on every load of default path
         const navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
-        const best = pickBestLocale(navLangs as string[], supportedLangs, config.defaultLocale.lang);
+        const defaultLocale = getDefultFromSupported();
+        const best = pickBestLocale(navLangs as string[], supportedLangs, defaultLocale!);
 
         const target = `${defaultPath}/${best}${search}${hash}`;
         if (target !== window.location.href && !window.location.href.endsWith(`${best}${search}${hash}`)) {
@@ -84,9 +86,18 @@ export function trySetNavigatorLang() {
     }
 }
 
+// only for github pages extra folder for default
+function getDefultFromSupported() {
+    const locales = config.supportedLocales.filter(i => i.lang !== config.defaultLocale.lang);
+    const defaultlocale = locales.find(i => i.lang.includes(config.defaultLocale.lang))?.lang;
+
+    return defaultlocale;
+}
+
 export function getPathExplicit(pathname: string) {
     if (pathname === `${config.basePath}`) {
-        return `${config.basePath}${config.defaultLocale.lang}/`
+        const defaultLocale = getDefultFromSupported();
+        return `${config.basePath}${defaultLocale}/`
     } else {
         return pathname;
     }
