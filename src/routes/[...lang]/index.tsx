@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead, RequestHandler, StaticGenerateHandler } from "@builder.io/qwik-city";
 import { AccommodationSection } from "~/components/accommodation-section";
 import { AosInit } from "~/components/AosInit";
@@ -15,6 +15,7 @@ import { DateTimeSection } from "~/components/date-time-section";
 import { inlineTranslate } from "qwik-speak";
 
 import { config } from '../../speak-config';
+import { trySetNavigatorLang } from "~/speak-navigator-lang";
 
 
 export default component$(() => {
@@ -49,6 +50,11 @@ export default component$(() => {
     { href: `#${ids.rsvp}`, title: t('app.nav.rsvp.title@@RSVP'), active: activeRsvp },
     { href: `#${ids.images}`, title: t('app.nav.images.title@@Bilder'), active: activeImages },
   ];
+
+
+  useVisibleTask$(() => {
+    trySetNavigatorLang();
+  });
 
 
   return (

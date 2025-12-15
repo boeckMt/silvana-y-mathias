@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
 import { useSpeakLocale, useSpeakConfig, useDisplayName, localizePath } from 'qwik-speak';
+import { getPathExplicit } from '~/speak-navigator-lang';
 
 function getLangDis(value: string) {
     return value.split('-')[0];
@@ -19,7 +20,7 @@ export const ChangeLocale = component$(() => {
         <>
             <div class="lang-switcher">
                 {config.supportedLocales.map(value => (
-                    <a key={value.lang} class={{ active: value.lang == locale.lang }} href={getPath(pathname, value.lang)}
+                    <a key={value.lang} class={{ active: value.lang == locale.lang }} href={getPathExplicit(getPath(pathname, value.lang))}
                         title={dn(value.lang, { type: 'language' })}>
                         {getLangDis(value.lang)}
                     </a>
