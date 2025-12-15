@@ -1,9 +1,11 @@
 import type { SpeakConfig } from 'qwik-speak';
 
 export const config: SpeakConfig = {
-    defaultLocale: { lang: 'de-DE', currency: 'EUR', timeZone: 'Europe/Rome' },
+    defaultLocale: { lang: 'de', currency: 'EUR', timeZone: 'Europe/Rome' },
     basePath: '/silvana-y-mathias/',
     supportedLocales: [
+        // default, not working on github pages so add a extra lang for de-DE
+        { lang: 'de', currency: 'EUR', timeZone: 'Europe/Rome' },
         { lang: 'de-DE', currency: 'EUR', timeZone: 'Europe/Rome' },
         { lang: 'es-ES', currency: 'SOL', timeZone: 'America/Los_Angeles' },
         { lang: 'en-EN', currency: 'USD', timeZone: 'America/Los_Angeles' }

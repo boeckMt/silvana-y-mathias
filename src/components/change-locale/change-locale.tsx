@@ -16,10 +16,13 @@ export const ChangeLocale = component$(() => {
 
     const getPath = localizePath();
 
+    // filter out default, not working on github pages 
+    const locales = config.supportedLocales.filter(i => i.lang !== 'de');
+
     return (
         <>
             <div class="lang-switcher">
-                {config.supportedLocales.map(value => (
+                {locales.map(value => (
                     <a key={value.lang} class={{ active: value.lang == locale.lang }} href={getPathExplicit(getPath(pathname, value.lang))}
                         title={dn(value.lang, { type: 'language' })}>
                         {getLangDis(value.lang)}
