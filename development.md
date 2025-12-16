@@ -134,3 +134,16 @@ chrome://inspect/#devices
 - no html5 routing so we need an index.html for each site
 - on the base language "de" redirect to user navigator.language
 - to allow redirect from pathname/ and also switch to german (base) use de as base and de-DE for german language 
+
+# Git Images 
+- https://git-lfs.com/
+- git lfs track "public/assets/**/*.jpg"
+- git lfs track "public/assets/**/*.jpeg"
+- git lfs track "public/assets/**/*.png"
+
+
+# TODO:
+- image optimize
+- https://www.npmjs.com/package/vite-plugin-image-optimizer
+or 
+- https://qwik.dev/docs/integrations/image-optimization/#image-optimization

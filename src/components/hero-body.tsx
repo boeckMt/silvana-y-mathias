@@ -17,7 +17,7 @@ export const HeroBody = component$(() => {
     }
 
 
-    const heroImage = 'https://lh3.googleusercontent.com/d/1mH9k471hBhmFmiXUm93G3qAelbhWC8nH=s4000?authuser=0'; // `${import.meta.env.BASE_URL}assets/llamitas_2.jpg`; // 
+    const heroImage = `${import.meta.env.BASE_URL}assets/llamitas.jpg`; // 
     return (
         <>
             <div class="hero-image">
