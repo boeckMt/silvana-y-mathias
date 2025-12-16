@@ -5,6 +5,8 @@ export const config: SpeakConfig = {
     basePath: '/silvana-y-mathias/',
     supportedLocales: [
         // default, not working on github pages so add a extra lang for de-DE
+        // navigator.languages ['de-DE', 'en-US', 'es', 'de', 'en', 'fr']
+        // all locales needs to be here, also the default to crete index.jtml files for it
         { lang: 'de', currency: 'EUR', timeZone: 'Europe/Rome' },
         { lang: 'de-DE', currency: 'EUR', timeZone: 'Europe/Rome' },
         { lang: 'es-ES', currency: 'SOL', timeZone: 'America/Los_Angeles' },

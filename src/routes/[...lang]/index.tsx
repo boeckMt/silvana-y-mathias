@@ -1,5 +1,5 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
-import type { DocumentHead, RequestHandler, StaticGenerateHandler } from "@builder.io/qwik-city";
+import type { DocumentHead, StaticGenerateHandler } from "@builder.io/qwik-city";
 import { AccommodationSection } from "~/components/accommodation-section";
 import { AosInit } from "~/components/AosInit";
 import { FooterSection } from "~/components/footer-section";
@@ -101,6 +101,8 @@ export const head: DocumentHead = () => {
   };
 };
 
+// https://github.com/robisim74/qwik-speak/blob/main/docs/adapters.md#get-the-code-ready
+// to generate for each supported language an index.html
 export const onStaticGenerate: StaticGenerateHandler = () => {
   return {
     params: config.supportedLocales.map(locale => {

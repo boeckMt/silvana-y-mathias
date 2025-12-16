@@ -29,8 +29,8 @@ export default defineConfig(({ command, mode }): UserConfig => {
       qwikVite(),
       // https://github.com/robisim74/qwik-speak/blob/main/docs/inline.md#configure
       qwikSpeakInline({
-        supportedLangs: ['de-DE', 'es-ES', 'en-EN'],
-        defaultLang: 'de-DE',
+        supportedLangs: ['de','de-DE', 'es-ES', 'en-EN'],
+        defaultLang: 'de',
         assetsPath: 'i18n',
         autoKeys: true
       }),
