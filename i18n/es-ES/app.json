@@ -3,7 +3,7 @@
     "accommodation": {
       "accoN1": {
         "kontakt": "Contacto",
-        "text3": "Habitaciones y Suiten",
+        "text3": "Habitaciones y Suits",
         "text4": "Si se deciden por esta opción, hay un contingente de habitaciones bajo la palabra clave",
         "text5": "'Hochzeit Mendoza Böck'"
       },
@@ -42,7 +42,7 @@
     },
     "date": {
       "calendar": "Google Calendar",
-      "date1": "Samstag",
+      "date1": "Sábado",
       "date3": "Julio 2026",
       "time": "ca. 15:00",
       "timeTitle": "Inicio de:",
@@ -64,7 +64,7 @@
         "title": "Mayo 2023"
       },
       "i10": {
-        "subtitle": "Segunda vez en Peru - Cumple de Silvi",
+        "subtitle": "Segunda vez en Perú - Cumple de Silvi",
         "title": "Febrero 2025"
       },
       "i11": {
@@ -72,7 +72,7 @@
         "title": "Febrero 2025"
       },
       "i12": {
-        "subtitle": "Silvi recibe un anillo - Parque del Amor, Peru",
+        "subtitle": "Silvi recibe un anillo - Parque del Amor, Perú",
         "title": "Marzo 2025"
       },
       "i13": {
@@ -84,7 +84,7 @@
         "title": "Julio 2025"
       },
       "i15": {
-        "subtitle": "Recargar energías al sol en Sicilia",
+        "subtitle": "Recargarse de calor en Sicilia",
         "title": "Octubre 2025"
       },
       "i2": {
@@ -92,7 +92,7 @@
         "title": "Agosto 2023"
       },
       "i3": {
-        "subtitle": "Noch eine Trekking- Josefsthaler Wasserfälle",
+        "subtitle": "Otro Trekking más - Cascada Josefsthaler",
         "title": "Noviembre 2023"
       },
       "i4": {
@@ -108,21 +108,21 @@
         "title": "Enero 2024"
       },
       "i7": {
-        "subtitle": "Primer viaje juntos en Peru - Familia de Silvi",
+        "subtitle": "Primer viaje juntos en Perú - Familia de Silvi",
         "title": "Junio 2024"
       },
       "i8": {
-        "subtitle": "Primer Pisco Sour en Peru - con el hermano de Silvi",
+        "subtitle": "Primer Pisco Sour en Perú - con el hermano de Silvi",
         "title": "Junio 2024"
       },
       "i9": {
         "subtitle": "Montando bici en el hermoso río Isar",
         "title": "Setiembre 2024"
       },
-      "title": "Unas fotos sobre nosotros"
+      "title": "Unas algunas fotos sobre nosotros"
     },
     "intro": {
-      "text1": "„Queridos amigos y familiares, ¡estamos muy felices de invitarles a celebrar nuestra boda!",
+      "text1": "„Queridos amigos y familiares, ¡Estamos muy felices de invitarles a celebrar nuestra boda!",
       "text2": "Encontrarán toda la información importante sobre la celebración más abajo",
       "text3": "Por favor, confírmenos a través del",
       "text4": "enlace de RSVP",
@@ -160,14 +160,14 @@
     },
     "program": {
       "text1": "Recepción",
-      "text2": "Café y pasteles",
-      "text3": "La cena",
+      "text2": "Café y postres",
+      "text3": "Cena",
       "text4": "Baile/Fiesta",
       "time1": "aprox. a las 15:00",
       "time2": "aprox. a las 16:00",
       "time3": "aprox. a las 19:00",
       "time4": "aprox. a las 21:00",
-      "title": "El Programa"
+      "title": "Programa"
     },
     "rsvp": {
       "mailLink": "Enviar e-mail",
@@ -176,7 +176,7 @@
       "text1": "Por favor, confírmenos por correo electrónico si asistirán a nuestra boda.",
       "text2": "Indíquennos si vendrán con o sin niños.",
       "text3": "Y si prefieren comida vegetariana o vegana, o si tienen alergias o intolerancias.",
-      "text4": "Por favor, envíennos también dos canciones de su elección para que la pista de baile vibre :-)",
+      "text4": "Por favor, envíennos también dos canciones de su elección para que la pista de baile tiemble :-)",
       "title": "Confirmar asistencia"
     }
   }
