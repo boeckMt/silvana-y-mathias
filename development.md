@@ -142,6 +142,8 @@ chrome://inspect/#devices
 - git lfs track "public/assets/**/*.jpeg"
 - git lfs track "public/assets/**/*.png"
 
+- adjust GitHub pages.yml to use lfs
+
 
 # TODO:
 - image optimize
