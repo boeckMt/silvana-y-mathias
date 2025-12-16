@@ -137,6 +137,7 @@ chrome://inspect/#devices
 
 # Git Images 
 - https://git-lfs.com/
+- git lfs install
 - git lfs track "public/assets/**/*.jpg"
 - git lfs track "public/assets/**/*.jpeg"
 - git lfs track "public/assets/**/*.png"
