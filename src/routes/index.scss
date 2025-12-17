@@ -506,7 +506,7 @@ body {
         height: calc(100% - 240px);
 
         img {
-            height: calc(100vh - 240px);
+            height: auto;
             width: auto;
         }
     }
