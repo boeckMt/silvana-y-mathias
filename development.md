@@ -144,6 +144,8 @@ chrome://inspect/#devices
 
 - adjust GitHub pages.yml to use lfs
 
+# Text
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text/Wrapping_breaking_text#:~:text=A%20hard%20break%20character%20can,breaks%20if%20breaking%20is%20needed.
 
 # TODO:
 - image optimize

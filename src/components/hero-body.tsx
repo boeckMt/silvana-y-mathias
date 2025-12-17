@@ -13,7 +13,8 @@ export const HeroBody = component$(() => {
         title2part1: 'Silvana',
         title2part2: 'y',
         title2part3: 'Mathias',
-        title3: t('app.hero.Title3@@Samstag, 25 Juli 2026')
+        title3: t('app.hero.Title3@@Samstag, 25 Juli 2026'),
+        title4: 'B&O Parkhotel, 83043 Bad Aibling'
     }
 
 
@@ -24,11 +25,16 @@ export const HeroBody = component$(() => {
                 <img src={heroImage} width={700} height={605}></img>
             </div>
             <section class="hero-intro pb-3 section-color regular-section has-text-centered has-vertically-aligned-content">
-                <div class="container has-text-centered">
+                <div class="container has-text-centered mb-3">
                     <h1 class="subtitle">{heroText.title1}</h1>
                     <h2 class="title">{heroText.title2part1} {heroText.title2part2} {heroText.title2part3}</h2>
                     <h4 class="subtitle hero-body-title">
-                        {heroText.title3}
+                        <p class="mb-3">
+                            {heroText.title3}
+                        </p>
+                        <p>
+                            {heroText.title4}
+                        </p>
                     </h4>
                 </div>
 

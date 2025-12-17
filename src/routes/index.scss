@@ -145,7 +145,7 @@ body {
         font-family: $font-family_3;
         font-weight: 700;
         // transform: rotate(-2deg);
-        font-size: 5rem;
+        font-size: 4rem;
         padding-bottom: 5px;
         color: var(--color-black);
         word-spacing: 0.3rem;
@@ -157,10 +157,6 @@ body {
         font-size: 1.3rem;
     }
 
-    .hero-body-title {
-        padding-top: 0.5rem; // 35px;
-        font-size: 1.5rem;
-    }
 
     .navbar {
         background: #fff;
@@ -335,7 +331,7 @@ body {
     font-size: 3rem;
     letter-spacing: 0px;
     padding-top: 0.5rem;
-    line-height: 3.7rem;
+    line-height: 3rem;
 }
 
 .ampersand {
@@ -354,7 +350,7 @@ body {
 }
 
 .date-num {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: $font-family_2;
     font-weight: 900;
     line-height: 1;
@@ -503,7 +499,7 @@ body {
 
 @media (min-width: 815px) {
     .hero-image {
-        height: calc(100% - 240px);
+        height: calc(100% - 270px);
 
         img {
             height: auto;
