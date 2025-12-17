@@ -501,12 +501,21 @@ body {
     height: 500px !important;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 815px) {
     .hero-image {
         height: calc(100% - 240px);
 
         img {
             height: auto;
+            width: fit-content;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 815px) {
+    .hero-image {
+        img {
+            height: fit-content;
             width: auto;
         }
     }
