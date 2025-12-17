@@ -74,7 +74,7 @@ export const ImageSection = component$<ItemProps>((props) => {
         },
         {
             title: t('app.image.i8.title@@Juni 2024'),
-            subtitle: t('app.image.i8.subtitle@@Erstes mal Pisco in Peru - Silvi Bruder'),
+            subtitle: t('app.image.i8.subtitle@@Erstes mal Pisco Sour in Peru - Silvi Bruder'),
             // src: 'https://lh3.googleusercontent.com/d/1hVy0ZHczMtpIPjHKuPYPJnfr80uOWhwl=s4000?authuser=0',
             src: `${import.meta.env.BASE_URL}assets/IMG-20240530.jpg`
         },

@@ -26,7 +26,7 @@
         "kontakt": "Contacto",
         "text4": "Distancia al lugar de la boda: Con el auto ca. 8 min, a pie ca. 58 min"
       },
-      "and": "und",
+      "and": "y",
       "location": {
         "text1": "Alojamiento",
         "text2": "Hay algunos alojamientos muy agradables cerca. Asimismo, recomendamos el B&O Parkhotel, donde también se celebrará la fiesta.",
@@ -112,17 +112,17 @@
         "title": "Junio 2024"
       },
       "i8": {
-        "subtitle": "Primer Pisco Sour en Perú - con el hermano de Silvi",
+        "subtitle": "Primer Pisco Sour Sour en Perú - con el hermano de Silvi",
         "title": "Junio 2024"
       },
       "i9": {
         "subtitle": "Montando bici en el hermoso río Isar",
         "title": "Setiembre 2024"
       },
-      "title": "Unas algunas fotos sobre nosotros"
+      "title": "Algunas fotos sobre nosotros"
     },
     "intro": {
-      "text1": "„Queridos amigos y familiares, ¡Estamos muy felices de invitarles a celebrar nuestra boda!",
+      "text1": "Queridos amigos y familiares, ¡Estamos muy felices de invitarles a celebrar nuestra boda!",
       "text2": "Encontrarán toda la información importante sobre la celebración más abajo",
       "text3": "Por favor, confírmenos a través del",
       "text4": "enlace de RSVP",
@@ -171,7 +171,7 @@
     },
     "rsvp": {
       "mailLink": "Enviar e-mail",
-      "mailbody": "Ejemplo:%0A%0AAssistiremos y llevaremos un niño%0A%0AComemos vegetariano%0A%0ACanción 1:%0A%0ACanción 2:",
+      "mailbody": "Ejemplo:%0A%0AAsistiremos y llevaremos un niño%0A%0AComemos vegetariano%0A%0ACanción 1:%0A%0ACanción 2:",
       "mailsubject": "[Hochzeit RSVP] Silvana Y Mathias",
       "text1": "Por favor, confírmenos por correo electrónico si asistirán a nuestra boda.",
       "text2": "Indíquennos si vendrán con o sin niños.",
