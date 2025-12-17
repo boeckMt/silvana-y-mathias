@@ -238,7 +238,7 @@ body {
         color: var(--color-black);
     }
 
-    a.link-in-text{
+    a.link-in-text {
         text-decoration: underline;
     }
 
@@ -315,7 +315,7 @@ body {
 
 .card {
     --bulma-card-color: var(--bulma-text);
-    --bulma-card-background-color: var(--bg-color-2);//var(--bg-color-4);
+    --bulma-card-background-color: var(--bg-color-2); //var(--bg-color-4);
     --bulma-card-content-padding: 0.4rem;
 
     .title,
@@ -499,6 +499,17 @@ body {
 
 .gmap_iframe {
     height: 500px !important;
+}
+
+@media (min-width: 600px) {
+    .hero-image {
+        height: calc(100% - 240px);
+
+        img {
+            height: calc(100vh - 240px);
+            width: auto;
+        }
+    }
 }
 
 @media (max-width: 599px) {
