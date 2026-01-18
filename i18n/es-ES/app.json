@@ -171,11 +171,11 @@
     },
     "rsvp": {
       "mailLink": "Enviar e-mail",
-      "mailbody": "Ejemplo:%0A%0AAsistiremos y llevaremos un niño%0A%0AComemos vegetariano%0A%0ACanción 1:%0A%0ACanción 2:",
+      "mailbody": "Ejemplo:%0A%0AAsistiremos y llevaremos un niño (más de 6)%0A%0AComemos vegetariano%0A%0ACanción 1:%0A%0ACanción 2:",
       "mailsubject": "[Hochzeit RSVP] Silvana Y Mathias",
       "text1": "Por favor, confírmenos por correo electrónico si asistirán a nuestra boda.",
-      "text2": "Indíquennos si vendrán con o sin niños.",
-      "text3": "Y si prefieren comida vegetariana o vegana, o si tienen alergias o intolerancias.",
+      "text2": "Indíquennos si vendrán con o sin niños y si estos son mayores de 6 o mayores de 12 años.",
+      "text3": "Además, indíquenos si es vegetariano o vegano y si tiene alguna alergia o intolerancia.",
       "text4": "Por favor, envíennos también dos canciones de su elección para que la pista de baile tiemble :-)",
       "title": "Confirmar asistencia"
     }
