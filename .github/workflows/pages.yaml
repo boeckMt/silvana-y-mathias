@@ -18,9 +18,9 @@ jobs:
           fetch-depth: 0
  
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
-          version: 10.15.0
+          version: 10.20.0
 
       - name: Ensure git-lfs is installed (usually present on runners)
         run: |
