@@ -16,24 +16,22 @@ jobs:
         with:
           lfs: true           # <--- important: checkout LFS objects
           fetch-depth: 0
- 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
-        with:
-          version: 10.20.0
 
       - name: Ensure git-lfs is installed (usually present on runners)
         run: |
           git lfs install
           git lfs pull || true   # make sure LFS objects are fetched
- 
+
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24.7.0
           cache: 'pnpm'
- 
-      - run: corepack enable
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10.20.0
  
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
