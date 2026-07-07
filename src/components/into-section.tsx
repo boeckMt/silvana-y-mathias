@@ -18,8 +18,10 @@ export const IntroSection = component$<ItemProps>((props) => {
         text3: t('app.intro.text3@@Bitte gebt uns über den'),
         text4: t('app.intro.text4@@RSVP-Link'),
         text5: t('app.intro.text5@@Bescheid, ob ihr dabei seid.'),
-        text6: t('app.intro.text6@@Das Programm wird im Laufe des Jahres ergänzt,'),
-        text7: t('app.intro.text7@@schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)')
+        text6: t('app.intro.text6@@!!! Updates zum Programm sind jetzt verfügbar !!!'),
+        text7: t('app.intro.text7@@Schaut einfach im'),
+        text8: t('app.intro.text8@@Programm'),
+        text9: t('app.intro.text9@@nach, was es Neues gibt :)')
     };
 
     return (
@@ -36,21 +38,22 @@ export const IntroSection = component$<ItemProps>((props) => {
             </div>
 
 
+            <p class="bodytext is-size-5 has-text-weight-extrabold" data-aos="fade-up" data-aos-easing="linear">
+                {introText.text6}
+            </p>
 
-            <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+            <p class="bodytext is-size-5 has-text-weight-extrabold" data-aos="fade-up" data-aos-easing="linear">
+                {introText.text7} <a href='#program' class="link-in-text"><b>{introText.text8}</b></a> {introText.text9}
+            </p>
+
+
+
+            <p class="bodytext mt-6" data-aos="fade-up" data-aos-easing="linear">
                 {introText.text1}
                 <br />
                 {introText.text2}
                 <br />
                 {introText.text3} <a href='#rsvp' class="link-in-text"><b>{introText.text4}</b></a> {introText.text5}
-            </p>
-
-            <p class="bodytext mt-6" data-aos="fade-up" data-aos-easing="linear">
-                {introText.text6}
-            </p>
-
-            <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-                {introText.text7}
             </p>
 
             <div data-aos="fade-up" data-aos-easing="linear">

@@ -10,21 +10,21 @@
       "accoN2": {
         "kontakt": "Kontakt",
         "text3": "Zimmer",
-        "text4": "Entfernung zur Location: Mit dem Auto ca. 3 min, zu Fuß ca. 15 min"
+        "text4": "Entfernung zur Location: Mit dem Auto 3 min, zu Fuß 15 min"
       },
       "accoN3": {
         "kontakt": "Kontakt",
         "text3": "Zimmer",
-        "text4": "Entfernung zur Location: Mit dem Auto ca. 6 min, zu Fuß ca. 40 min"
+        "text4": "Entfernung zur Location: Mit dem Auto 6 min, zu Fuß 40 min"
       },
       "accoN4": {
         "kontakt": "Kontakt",
         "text3": "Zimmer",
-        "text4": "Entfernung zur Location: Mit dem Auto ca. 7 min, zu Fuß ca. 54 min"
+        "text4": "Entfernung zur Location: Mit dem Auto 7 min, zu Fuß 54 min"
       },
       "accoN5": {
         "kontakt": "Kontakt",
-        "text4": "Entfernung zur Location: Mit dem Auto ca. 8 min, zu Fuß ca. 58 min"
+        "text4": "Entfernung zur Location: Mit dem Auto 8 min, zu Fuß 58 min"
       },
       "and": "und",
       "location": {
@@ -44,7 +44,7 @@
       "calendar": "Google Calendar",
       "date1": "Samstag",
       "date3": "Juli 2026",
-      "time": "ca. 15:00",
+      "time": "15:00",
       "timeTitle": "Beginn:",
       "title": "Datum"
     },
@@ -127,8 +127,10 @@
       "text3": "Bitte gebt uns über den",
       "text4": "RSVP-Link",
       "text5": "Bescheid, ob ihr dabei seid.",
-      "text6": "Das Programm wird im Laufe des Jahres ergänzt,",
-      "text7": "schaut also ein paar Wochen vor der Hochzeit noch einmal vorbei :)",
+      "text6": "!!! Updates zum Programm sind jetzt verfügbar !!!",
+      "text7": "Schaut einfach im",
+      "text8": "Programm",
+      "text9": "nach, was es Neues gibt :)",
       "title": "Willkommen"
     },
     "location": {
@@ -159,14 +161,24 @@
       }
     },
     "program": {
-      "text1": "Empfang",
-      "text2": "Kaffee und Kuchen",
-      "text3": "Abendessen",
-      "text4": "Tanzen/Party",
-      "time1": "ca. 15:00",
-      "time2": "ca. 16:00",
-      "time3": "ca. 19:00",
-      "time4": "ca. 21:00",
+      "text0": "Ankunft / Begrüßung",
+      "time0": "15:00",
+      "text1": "Sektempfang",
+      "time1": "15:30",
+      "text2": "Gruppenfotos / Fotos",
+      "time2": "15:30 - 19:00",
+      "text3": "Kaffee und Kuchen",
+      "time3": "16:00",
+      "text4": "Besuch Alpakas / Lamas (Kinder)",
+      "time4": "17:30 - 18:00",
+      "text5": "Kennenlernen / Spiele",
+      "time5": "18:00",
+      "text6": "Abendessen (Buffet)",
+      "time6": "19:00",
+      "text7": "Tanzen/Party",
+      "time7": "21:00",
+      "text8": "Ende",
+      "time8": "01:00",
       "title": "Programm"
     },
     "rsvp": {
