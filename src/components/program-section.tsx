@@ -16,14 +16,24 @@ export const ProgramSection = component$<ItemProps>((props) => {
 
     const programText = {
         title: t('app.program.title@@Programm'),
-        text1: t('app.program.text1@@Empfang'),
-        time1: t('app.program.time1@@ca. 15:00'),
-        text2: t('app.program.text2@@Kaffee und Kuchen'),
-        time2: t('app.program.time2@@ca. 16:00'),
-        text3: t('app.program.text3@@Abendessen'),
-        time3: t('app.program.time3@@ca. 19:00'),
-        text4: t('app.program.text4@@Tanzen/Party'),
-        time4: t('app.program.time4@@ca. 21:00')
+        text0: t('app.program.text0@@Ankunft / Begrüßung'),
+        time0: t('app.program.time0@@ca. 15:00'),
+        text1: t('app.program.text1@@Sektempfang'),
+        time1: t('app.program.time1@@ca. 15:30'),
+        text2: t('app.program.text2@@Gruppenfotos / Fotos'),
+        time2: t('app.program.time2@@ca. 15:30 - 19:00'),
+        text3: t('app.program.text3@@Kaffee und Kuchen'),
+        time3: t('app.program.time3@@ca. 16:00'),
+        text4: t('app.program.text4@@Alpakas / Lamas Besuch (für Kinder)'),
+        time4: t('app.program.time4@@ca. 17:30'),
+        text5: t('app.program.text5@@Kennenlernen / Spiele'),
+        time5: t('app.program.time5@@ca. 18:00'),
+        text6: t('app.program.text6@@Abendessen (Buffet)'),
+        time6: t('app.program.time6@@ca. 19:00'),
+        text7: t('app.program.text7@@Tanzen/Party'),
+        time7: t('app.program.time7@@ca. 21:00'),
+        text8: t('app.program.text8@@Ende'),
+        time8: t('app.program.time8@@ca. 01:00')
     };
 
     return (
@@ -36,6 +46,15 @@ export const ProgramSection = component$<ItemProps>((props) => {
                         <h1 class="title has-text-centered section-title">{programText.title}</h1>
                     </div>
                     <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <div class="date is-larger has-text-centered">
+                                {programText.text0}
+                                <br></br>
+                                <strong>{programText.time0}</strong>
+                            </div>
+
+                        </div>
+
                         <div class="column is-4 has-vertically-aligned-content">
 
                             {/* <div class="date is-larger has-text-centered">
@@ -73,13 +92,47 @@ export const ProgramSection = component$<ItemProps>((props) => {
                         </div>
 
                         <div class="column is-4 has-vertically-aligned-content">
-
                             <h1 class="date is-larger has-text-centered">
                                 {programText.text4}
                                 <br></br>
                                 <strong>{programText.time4}</strong>
                             </h1>
 
+                        </div>
+
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <h1 class="date is-larger has-text-centered">
+                                {programText.text5}
+                                <br></br>
+                                <strong>{programText.time5}</strong>
+                            </h1>
+
+                        </div>
+
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <h1 class="date is-larger has-text-centered">
+                                {programText.text6}
+                                <br></br>
+                                <strong>{programText.time6}</strong>
+                            </h1>
+
+                        </div>
+
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <h1 class="date is-larger has-text-centered">
+                                {programText.text7}
+                                <br></br>
+                                <strong>{programText.time7}</strong>
+                            </h1>
+
+                        </div>
+
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <h1 class="date is-larger has-text-centered">
+                                {programText.text8}
+                                <br></br>
+                                <strong>{programText.time8}</strong>
+                            </h1>
 
                         </div>
 
