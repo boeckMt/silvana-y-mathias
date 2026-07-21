@@ -151,7 +151,7 @@ export const MenuSection = component$<ItemProps>((props) => {
 
                         <div class="column is-4 has-vertically-aligned-content">
                             <div class="date is-larger has-text-centered">
-                                <strong>HAUPTSPEISEN</strong>
+                                <strong>{menuText.text1}</strong>
                                 <br></br>
 
                                 <ul class="menu-list mb-6">
