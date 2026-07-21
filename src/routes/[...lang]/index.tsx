@@ -10,6 +10,7 @@ import { IntroSection } from "~/components/into-section";
 import { LocationSection } from "~/components/location-section";
 import { MobileNav } from "~/components/mobile-nav";
 import { ProgramSection } from "~/components/program-section";
+import { MenuSection } from "~/components/menu-section";
 import { RsvpSection } from "~/components/rsvp-section";
 import { DateTimeSection } from "~/components/date-time-section";
 import { inlineTranslate } from "qwik-speak";
@@ -28,6 +29,7 @@ export default component$(() => {
     accommodation: 'accommodation',
     location: 'location',
     program: 'program',
+    menu: 'menu',
     rsvp: 'rsvp',
     images: 'images'
   };
@@ -37,6 +39,7 @@ export default component$(() => {
   const activeAccommodation = useSignal(false);
   const activeLocation = useSignal(false);
   const activeProgram = useSignal(false);
+  const activeMenu = useSignal(false);
   const activeRsvp = useSignal(false);
   const activeImages = useSignal(false);
 
@@ -47,6 +50,7 @@ export default component$(() => {
     { href: `#${ids.accommodation}`, title: t('app.nav.accommodation.title@@Unterkunft'), active: activeAccommodation },
 
     { href: `#${ids.program}`, title: t('app.nav.program.title@@Programm'), active: activeProgram },
+    { href: `#${ids.menu}`, title: t('app.nav.menu.title@@Menü'), active: activeMenu },
     { href: `#${ids.rsvp}`, title: t('app.nav.rsvp.title@@RSVP'), active: activeRsvp },
     { href: `#${ids.images}`, title: t('app.nav.images.title@@Bilder'), active: activeImages },
   ];
@@ -77,6 +81,7 @@ export default component$(() => {
         <AccommodationSection id={ids.accommodation}></AccommodationSection>
 
         <ProgramSection id={ids.program}></ProgramSection>
+        <MenuSection id={ids.menu}></MenuSection>
         <RsvpSection id={ids.rsvp}></RsvpSection>
         <ImageSection id={ids.images}></ImageSection>
       </div>
