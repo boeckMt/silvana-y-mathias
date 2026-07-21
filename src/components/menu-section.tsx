@@ -13,8 +13,24 @@ interface ItemIconProps {
 // const imageEnd =  `${import.meta.env.BASE_URL}assets/blumen_schnitt.png`;
 
 const MenuIconSection = component$<ItemIconProps>((props) => {
+    const t = inlineTranslate();
+
+    const iconText = {
+        icontext1: t('app.menu.icontext1@@glutenfrei'),
+        icontext2: t('app.menu.icontext2@@laktosefrei'),
+        icontext3: t('app.menu.icontext3@@vegan'),
+    }
+
+    let title = '';
+    if (props.name.includes('_gluten')) {
+        title = iconText.icontext1;
+    } else if (props.name.includes('_laktose')) {
+        title = iconText.icontext2;
+    } else if (props.name.includes('_vegan')) {
+        title = iconText.icontext3;
+    }
     const iconBaseUrl = `${import.meta.env.BASE_URL}assets/`;
-    return <img class="icon-44" alt="glutenfrei" src={iconBaseUrl + props.name} loading="lazy" width={44} height={44} crossOrigin="anonymous" />
+    return <img class="icon-44" alt="glutenfrei" src={iconBaseUrl + props.name} loading="lazy" width={44} height={44} crossOrigin="anonymous" title={title} />
 });
 
 

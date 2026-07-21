@@ -202,7 +202,10 @@
       "text16": "Salatvariationen",
       "text17": "Gemüse-Tortellini",
       "text18": "Kokos-Panna Cotta",
-      "text19": "Saisonales Obst"
+      "text19": "Saisonales Obst",
+      "icontext1": "glutenfrei",
+      "icontext2": "laktosefrei",
+      "icontext3": "vegan"
     },
     "drinks": {
       "title": "Getränke",

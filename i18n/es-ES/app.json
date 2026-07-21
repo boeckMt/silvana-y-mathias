@@ -202,7 +202,10 @@
       "text16": "Variedad de ensaladas",
       "text17": "Tortellini de verduras",
       "text18": "Panna cotta de coco",
-      "text19": "Frutas de estación"
+      "text19": "Frutas de estación",
+      "icontext1": "libre de gluten",
+      "icontext2": "sin lactosa",
+      "icontext3": "vegan"
     },
     "drinks": {
       "title": "Bebidas",

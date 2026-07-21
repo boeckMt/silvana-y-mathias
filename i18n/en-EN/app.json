@@ -202,7 +202,10 @@
       "text16": "Selection of salads",
       "text17": "Vegetable tortellini",
       "text18": "Coconut panna cotta",
-      "text19": "Seasonal fruit"
+      "text19": "Seasonal fruit",
+      "icontext1": "gluten-free",
+      "icontext2": "lactose-free",
+      "icontext3": "vegan"
     },
     "drinks": {
       "title": "Drinks",
