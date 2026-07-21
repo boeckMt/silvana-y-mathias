@@ -134,7 +134,7 @@ export const MenuSection = component$<ItemProps>((props) => {
                         <h1 class="title has-text-centered section-title">{menuText.title}</h1>
                     </div>
                     <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-                        <div class="column is-4 has-vertically-aligned-content">
+                        <div class="column is-4">
                             <div class="date is-larger has-text-centered">
                                 <strong>{menuText.text0}</strong>
                                 <br></br>
@@ -159,18 +159,14 @@ export const MenuSection = component$<ItemProps>((props) => {
                                     <li><span class="list-item">{menuText.text8}<MenuIconSection name="icon_gluten.png"></MenuIconSection> </span></li>
                                     <li><span class="list-item">{menuText.text9}<MenuIconSection name="icon_gluten.png"></MenuIconSection></span></li>
                                     <li><span class="list-item">{menuText.text10}<MenuIconSection name="icon_laktose.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection> </span></li>
-                                </ul>
-
-                                <ul class="menu-list mb-6">
-                                    <li class="dot"><span class="list-item">{menuText.text11}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_laktose.png"></MenuIconSection> </span></li>
+                 
+                                    <li class="dot space-above"><span class="list-item">{menuText.text11}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_laktose.png"></MenuIconSection> </span></li>
                                     <li><span class="list-item">{menuText.text12}<MenuIconSection name="icon_gluten.png"></MenuIconSection> </span></li>
                                     <li><span class="list-item">{menuText.text13}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection></span></li>
                                     <li><span class="list-item">{menuText.text14}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection></span></li>
                                     <li><span class="list-item">{menuText.text15}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection> </span></li>
-                                </ul>
-
-                                <ul class="menu-list">
-                                    <li class="dot"><span class="list-item">{menuText.text16}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_laktose.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection> </span></li>
+               
+                                    <li class="dot space-above"><span class="list-item">{menuText.text16}<MenuIconSection name="icon_gluten.png"></MenuIconSection><MenuIconSection name="icon_laktose.png"></MenuIconSection><MenuIconSection name="icon_vegan.png"></MenuIconSection> </span></li>
                                     <li class="dot"><span class="list-item">{menuText.text17}<MenuIconSection name="icon_vegan.png"></MenuIconSection> </span></li>
                                 </ul>
 
@@ -179,7 +175,7 @@ export const MenuSection = component$<ItemProps>((props) => {
                             </div>
 
                         </div>
-                        <div class="column is-4 has-vertically-aligned-content">
+                        <div class="column is-4">
 
                             <div class="date is-larger has-text-centered">
                                 <strong>{menuText.text2}</strong>
@@ -203,7 +199,7 @@ export const MenuSection = component$<ItemProps>((props) => {
                         <h1 class="title has-text-centered section-title">{drinksText.title}</h1>
                     </div>
                     <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-                        <div class="column is-4 has-vertically-aligned-content">
+                        <div class="column is-4">
                             <div class="date is-larger has-text-centered">
                                 <strong>{drinksText.text0}</strong>
                                 <br></br>
@@ -211,15 +207,15 @@ export const MenuSection = component$<ItemProps>((props) => {
                                     <li class="dot"><span class="list-item">{drinksText.text3}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text4}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text5}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text5}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text6}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text7}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text8}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text9}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text9}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text10}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text11}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text11}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text12}</span></li>
                                 </ul>
 
@@ -227,7 +223,7 @@ export const MenuSection = component$<ItemProps>((props) => {
 
                         </div>
 
-                        <div class="column is-4 has-vertically-aligned-content">
+                        <div class="column is-4">
                             <div class="date is-larger has-text-centered">
                                 <strong>{drinksText.text1}</strong>
                                 <br></br>
@@ -238,24 +234,24 @@ export const MenuSection = component$<ItemProps>((props) => {
                                     <li class="dot"><span class="list-item">{drinksText.text15}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text16}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text17}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text17}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text18}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text19}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text20}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text21}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text21}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text22}</span></li>
                                     <li><span class="list-item">{drinksText.text23}</span></li>
                                     <li><span class="list-item">{drinksText.text24}</span></li>
                                     <li><span class="list-item">{drinksText.text25}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text26}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text26}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text27}</span></li>
                                 </ul>
                             </div>
 
                         </div>
-                        <div class="column is-4 has-vertically-aligned-content">
+                        <div class="column is-4">
 
                             <div class="date is-larger has-text-centered">
                                 <strong>{drinksText.text2}</strong>
@@ -267,7 +263,7 @@ export const MenuSection = component$<ItemProps>((props) => {
                                     <li class="dot"><span class="list-item">{drinksText.text31}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text32}</span></li>
 
-                                    <li class="dot"><span class="list-item space-above">{drinksText.text33}</span></li>
+                                    <li class="dot space-above"><span class="list-item">{drinksText.text33}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text34}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text35}</span></li>
                                     <li class="dot"><span class="list-item">{drinksText.text36}</span></li>

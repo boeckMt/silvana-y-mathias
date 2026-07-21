@@ -511,22 +511,20 @@ body {
         list-style: disc;
     }
 
+    li.space-above {
+        margin-top: 1rem;
+    }
+
 
     .list-item {
-        /*   display: flex;
-        align-items: center;
-        justify-content: left; */
+        display: inline;
 
         .icon-44 {
             width: 16px;
             height: 16px;
             margin-left: 2%;
             margin-right: 2px;
-            opacity: .75;
-        }
-
-        &.space-above {
-            margin-top: 1rem;
+            opacity: .4;
         }
 
 
@@ -581,6 +579,17 @@ body {
     .hero-foot {
         display: none;
     }
+
+    // --------------
+    // menu list 
+
+    .menu-list {
+        display: block;
+
+        .icon-44 {
+            display: inline-block;
+        }
+    }
 }
 
 @media (max-width: 469px) {
@@ -588,16 +597,9 @@ body {
         --bulma-grid-column-min: 100%;
     }
 
-    // --------------
-    // menu list 
-
-    /*   .menu-list {
-        .list-item {
-            display: flex;
-            align-items: center;
-            justify-content: left;
-        }
-    } */
+    .menu-list {
+        display: inline;
+    }
 }
 
 @media (max-width: 1024px) {
