@@ -158,6 +158,9 @@
       },
       "rsvp": {
         "title": "RSVP"
+      },
+      "menu": {
+        "title": "Menu"
       }
     },
     "program": {
